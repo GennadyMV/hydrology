@@ -1,0 +1,179 @@
+﻿body {
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.right-thick-line {
+    border-right-width: 2px !important; 
+    border-right-color: #888 !important;
+}
+
+.left-thick-line {
+    border-left-width: 2px !important; 
+    border-left-color: #888 !important;
+}
+
+.bottom-thick-line {
+    border-bottom-width: 2px !important; 
+    border-bottom-color: #888 !important;
+}
+
+.top-thick-line {
+    border-top-width: 2px !important; 
+    border-top-color: #888 !important;
+}
+
+.thick-line {
+    border-top-width: 2px !important;
+    border-width: 2px !important; 
+    border-color: #888 !important;
+}
+
+.sub-header {
+    text-align: center !important;  
+    vertical-align: middle !important;
+}
+
+/*nav bar fixed top*/
+body {
+    padding-top:70px;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html, body {
+    height: auto;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+  height: auto;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  height: auto;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+ 
+}
+.footer-block { margin: 20px 0; }
+
+#footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.demo-placeholder {
+            box-sizing: border-box;
+	width: 850px;
+	height: 450px;
+	padding: 20px 15px 15px 15px;
+	margin: 15px auto 30px auto;
+	border: 1px solid #ddd;
+	background: #fff;
+	background: linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -o-linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -ms-linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -moz-linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -webkit-linear-gradient(#f6f6f6 0, #fff 50px);
+	box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+	-o-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-ms-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+
+.panel-heading {
+    cursor: pointer;
+}
+
+@media print {
+    .tlg-container {
+        width: 100%;
+        float: left;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .input-container {
+        width: 0;
+        float: right;
+        height: 100%;
+    }
+    
+}

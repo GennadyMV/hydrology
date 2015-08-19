@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrologyBorshchForecastService", "HydrologyBorshchForecastService\HydrologyBorshchForecastService.csproj", "{4E3DB40F-FF06-41B4-9094-9F502063327B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrologyBorshchForecastCore", "HydrologyBorshchForecastCore\HydrologyBorshchForecastCore.csproj", "{E292A6FD-0241-469C-8CF5-FD23DDEBDF15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrologyConsole", "HydrologyConsole\HydrologyConsole.csproj", "{E72163EF-9D8D-45EE-93C3-13198EADDE8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrologyBorshchForecastForm", "HydrologyBorshchForecastForm\HydrologyBorshchForecastForm.csproj", "{19B0F77A-71D0-469C-88A9-E529B4877442}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrologyBorshchForecastConsole", "HydrologyBorshchForecastConsole\HydrologyBorshchForecastConsole.csproj", "{6AFDC3F0-B140-4182-980E-53C0B09A9C32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrologyBorshchForecastEntity", "HydrologyBorshchForecastEntity\HydrologyBorshchForecastEntity.csproj", "{6586003C-7787-4031-BB86-6A97E1C40B99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrologyWeb", "HydrologyWeb\HydrologyWeb.csproj", "{1E7C29E8-26F2-40FE-AF09-DAD616A92732}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E3DB40F-FF06-41B4-9094-9F502063327B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E3DB40F-FF06-41B4-9094-9F502063327B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E3DB40F-FF06-41B4-9094-9F502063327B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E3DB40F-FF06-41B4-9094-9F502063327B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E292A6FD-0241-469C-8CF5-FD23DDEBDF15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E292A6FD-0241-469C-8CF5-FD23DDEBDF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E292A6FD-0241-469C-8CF5-FD23DDEBDF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E292A6FD-0241-469C-8CF5-FD23DDEBDF15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E72163EF-9D8D-45EE-93C3-13198EADDE8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E72163EF-9D8D-45EE-93C3-13198EADDE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E72163EF-9D8D-45EE-93C3-13198EADDE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E72163EF-9D8D-45EE-93C3-13198EADDE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B0F77A-71D0-469C-88A9-E529B4877442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B0F77A-71D0-469C-88A9-E529B4877442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B0F77A-71D0-469C-88A9-E529B4877442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B0F77A-71D0-469C-88A9-E529B4877442}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AFDC3F0-B140-4182-980E-53C0B09A9C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AFDC3F0-B140-4182-980E-53C0B09A9C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AFDC3F0-B140-4182-980E-53C0B09A9C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AFDC3F0-B140-4182-980E-53C0B09A9C32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6586003C-7787-4031-BB86-6A97E1C40B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6586003C-7787-4031-BB86-6A97E1C40B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6586003C-7787-4031-BB86-6A97E1C40B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6586003C-7787-4031-BB86-6A97E1C40B99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E7C29E8-26F2-40FE-AF09-DAD616A92732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E7C29E8-26F2-40FE-AF09-DAD616A92732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E7C29E8-26F2-40FE-AF09-DAD616A92732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7C29E8-26F2-40FE-AF09-DAD616A92732}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,254 @@
+﻿@model HydrologyWeb.Models.BorshchForecast
+
+@{
+    ViewBag.Title = "Прогноз уровня рек и притока воды к Зейскому водохранилищу";
+}
+
+    <p>
+        @ViewBag.Error
+    </p>    
+
+
+<h2>Прогноз уровня рек и притока воды к Зейскому водохранилищу от @Model.forecastDate.ToString("dd.MM.yyyy")</h2>
+
+<p>
+    Фактические уровни воды в бассейне р.Амур на @Model.forecastDate.ToString("dd.MM.yyyy") 
+     года и <br/>прогноз уровней воды (в см над нулем графика поста) на 
+    @Model.forecastDate.AddDays(1).ToString("dd.MM")  - 
+    @Model.forecastDate.AddDays(6).ToString("dd.MM.yyyy") года
+</p>
+
+
+            
+
+            <table id="river-table" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            Индекс
+                        </th>
+                        <th>
+                            Река - Пункт
+                        </th>
+                        <th>
+                            Пойма
+                        </th>
+                        <th>
+                            НЯ, см
+                        </th>
+                        <th>
+                            ОЯ, см
+                        </th>
+                        <th>
+                            H факт, см
+                        </th>
+                        <th>
+                            H прогноз @Model.forecastDate.AddDays(1).ToString("dd.MM.yy")
+                        </th>
+                        <th>
+                            H прогноз @Model.forecastDate.AddDays(2).ToString("dd.MM.yy")
+                        </th>
+                        <th>
+                            H прогноз @Model.forecastDate.AddDays(3).ToString("dd.MM.yy")
+                        </th>
+                        <th>
+                            H прогноз @Model.forecastDate.AddDays(4).ToString("dd.MM.yy")
+                        </th>
+                        <th>
+                            H прогноз @Model.forecastDate.AddDays(5).ToString("dd.MM.yy")
+                        </th>
+                        <th>
+                            H прогноз @Model.forecastDate.AddDays(6).ToString("dd.MM.yy")
+                        </th>
+                        <th>
+                            "0" графика поста
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.theRiverList)
+                    {
+                        <tr>
+                            <td>
+                                @item.HydroPostCode
+                            </td>
+                            <td>
+                                @item.Gauge
+                            </td>
+                            <td>
+                                @item.FloodPlaneMark
+                            </td>
+                            <td>
+                                @item.AdverseFact
+                            </td>
+                            <td>
+                                @item.DangerFact
+                            </td>
+                            <td>
+                                @item.Level_obs
+                            </td>
+                            <td>
+                                @item.Level_for1
+                            </td>
+                            <td>
+                                @item.Level_for2
+                            </td>
+                            <td>
+                                @item.Level_for3
+                            </td>
+                            <td>
+                                @item.Level_for4
+                            </td>
+                            <td>
+                                @item.Level_for5
+                            </td>
+                            <td>
+                                @item.Level_for6
+                            </td>
+                            <td>
+                                @item.Height
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+<p>
+    Нуль поста - высота отметки нуля графика поста в м Б.С.<br/>
+    Нф - фактический уровень воды на 8-00 местного времени по сотоянию @Model.forecastDate.ToString("dd.MM.yyyy")<br/>
+    Критические значения уровня воды в см над нулем графика поста:<br/>
+    Пойма - уровень, при котором происходит выход воды на пойму<br />
+    НЯ - отметка неблагоприятного явления<br />
+    ОЯ - отметка опасного явления
+</p>
+<p>
+    Дата выпуска прогноза: @Model.forecastDate.ToShortDateString()
+
+</p>
+<hr />
+<p>
+    Прогноз суточного притока воды к Зейскому водохранилищу (куб. м/с) на 
+    @Model.forecastDate.AddDays(1).ToString("dd.MM")  - 
+    @Model.forecastDate.AddDays(5).ToString("dd.MM.yyyy")
+    <br />
+
+    Приток фактический на @Model.forecastDate.ToString("dd.MM.yyyy") <br/>
+    Q в/б = @Model.theReservoirCOSMO.Inflow_obs_WB куб м/с<br/>
+    Q г/м = @Model.theReservoirCOSMO.Inflow_obs_HM куб м/с
+</p>
+
+
+            <table id="reservoir-table" class="table table-border table-striped">
+                <thead>
+                    <tr>
+                        <th>    
+                            Модель
+                        </th>
+                        <th>
+                            Q прогноз @Model.forecastDate.AddDays(1).ToString("dd.MM.yy")
+                        </th>
+                        <th>
+                            Q прогноз @Model.forecastDate.AddDays(2).ToString("dd.MM.yy")
+                        </th>
+                        <th>
+                            Q прогноз @Model.forecastDate.AddDays(3).ToString("dd.MM.yy")
+                        </th>
+                        <th>
+                            Q прогноз @Model.forecastDate.AddDays(4).ToString("dd.MM.yy")
+                        </th>
+                        <th>
+                            Q прогноз @Model.forecastDate.AddDays(5).ToString("dd.MM.yy")
+                        </th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>
+                            COSMO
+                        </th>
+                        <th>
+                           @Model.theReservoirCOSMO.Inflow_for1
+                        </th>
+                        <th>
+                            @Model.theReservoirCOSMO.Inflow_for2
+                        </th>
+                        <th>
+                            @Model.theReservoirCOSMO.Inflow_for3
+
+                        </th>
+                        <th>
+                            @Model.theReservoirCOSMO.Inflow_for4
+                        </th>
+                        <th>
+                            @Model.theReservoirCOSMO.Inflow_for5
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            JMA
+                        </th>
+                        <th>
+                            @Model.theReservoirJMA.Inflow_for1
+                        </th>
+                        <th>
+                            @Model.theReservoirJMA.Inflow_for2
+                        </th>
+                        <th>
+                            @Model.theReservoirJMA.Inflow_for3
+
+                        </th>
+                        <th>
+                            @Model.theReservoirJMA.Inflow_for4
+                        </th>
+                        <th>
+                            @Model.theReservoirJMA.Inflow_for5
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            NCEP
+                        </th>
+                        <th>
+                            @Model.theReservoirNCEP.Inflow_for1
+                        </th>
+                        <th>
+                            @Model.theReservoirNCEP.Inflow_for2
+                        </th>
+                        <th>
+                            @Model.theReservoirNCEP.Inflow_for3
+
+                        </th>
+                        <th>
+                            @Model.theReservoirNCEP.Inflow_for4
+                        </th>
+                        <th>
+                            @Model.theReservoirNCEP.Inflow_for5
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            UKMO
+                        </th>
+                        <th>
+                            @Model.theReservoirUKMO.Inflow_for1
+                        </th>
+                        <th>
+                            @Model.theReservoirUKMO.Inflow_for2
+                        </th>
+                        <th>
+                            @Model.theReservoirUKMO.Inflow_for3
+
+                        </th>
+                        <th>
+                            @Model.theReservoirUKMO.Inflow_for4
+                        </th>
+                        <th>
+                            @Model.theReservoirUKMO.Inflow_for5
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+      
+
+
