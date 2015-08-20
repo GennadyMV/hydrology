@@ -182,7 +182,10 @@ namespace HydrologyBorshchForecastCore
                 }
                 else
                 {
-                    isNew = true;
+                    if (theRiver.HydroPostCode == 5012)
+                    {
+                        isNew = true;
+                    }
                     theRiver.Save();
                 }
                 

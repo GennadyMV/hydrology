@@ -80,7 +80,7 @@ namespace HydrologyBorshchForecastConsole
             theBotReservoir.Parser(dateCurr);
             Thread.Sleep(1000 * 60);
 
-            if (theBotReservoir.isNew() == true)
+            if (theBotRiver.isNew() == true)
             {
                 Send(dateCurr);
             }
