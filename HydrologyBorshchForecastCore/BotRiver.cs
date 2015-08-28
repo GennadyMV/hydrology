@@ -184,6 +184,7 @@ namespace HydrologyBorshchForecastCore
                 {
                     if (theRiver.HydroPostCode == 5012)
                     {
+                        this.Log(this.parseDate.ToShortDateString());
                         isNew = true;
                     }
                     theRiver.Save();

@@ -1,4 +1,4 @@
-﻿using GeospaceEntity.Repositories;
+﻿using HydrologyBorshchForecastEntity.Repositories;
 using HydrologyBorshchForecastEntity.Common;
 using System;
 using System.Collections.Generic;

@@ -1,4 +1,4 @@
-﻿using GeospaceEntity.Repositories;
+﻿using HydrologyBorshchForecastEntity.Repositories;
 using HydrologyBorshchForecastEntity.Common;
 using System;
 using System.Collections.Generic;
@@ -13,6 +13,7 @@ namespace HydrologyBorshchForecastEntity.Models
         public River()
         {
             this.Gauge = "";
+            ID = -1;
         }
         public virtual int ID { get; set; }
         public virtual DateTime created_at { get; set; }

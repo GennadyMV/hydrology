@@ -1,0 +1,19 @@
+﻿@model HydrologyWeb.Models.ViewMap
+<li>
+    <form class="navbar-form pull-left">
+        <select class="selectpicker">
+            @foreach(var item in Model.theSiteTypeCollection)
+            {
+                <option value="@item.Id">@item.ShortName - @item.Name</option>
+            }
+
+        </select>
+        <script>
+        $('select.selectpicker').on('change', function(){
+        var selected = $('.selectpicker option:selected').val();
+        var url = "@Url.Action("Index")" + "?SiteType=" + selected;
+        $(location).attr('href', url);
+        });
+    </script>
+    </form>
+</li>

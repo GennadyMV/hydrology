@@ -1,0 +1,52 @@
+﻿
+<li id="goto_prev">
+    @Html.ActionLink("Пред.",
+            "Index",
+            "Forecast",
+            new
+            {
+                YYYY = Model.forecastDate.AddDays(-1).Year,
+                MM = Model.forecastDate.AddDays(-1).Month,
+                DD = Model.forecastDate.AddDays(-1).Day,
+                tab = Model.tab
+            },
+                                new
+                                {
+                                    @class = "btn btn-default btn-lg"
+                                }
+)
+</li>
+<li id="goto_next">
+    @Html.ActionLink("След.",
+            "Index",
+            "Forecast",
+            new
+                     {
+                         YYYY = Model.forecastDate.AddDays(1).Year,
+                         MM = Model.forecastDate.AddDays(1).Month,
+                         DD = Model.forecastDate.AddDays(1).Day,
+                         tab = Model.tab
+                     },
+                                new
+                                {
+                                    @class = "btn btn-default btn-lg"
+                                }
+)
+</li>
+
+<li>
+    @Html.ActionLink("Экспорт в Excel",
+            "Excel",
+            "Forecast",
+            new
+                     {
+                         YYYY = Model.forecastDate.Year,
+                         MM = Model.forecastDate.Month,
+                         DD = Model.forecastDate.Day
+                     },
+                                new
+                                {
+                                    @class = "btn btn-default btn-lg"
+                                }
+)
+</li>

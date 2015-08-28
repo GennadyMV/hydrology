@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrologyBorshchForecastEnt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrologyWeb", "HydrologyWeb\HydrologyWeb.csproj", "{1E7C29E8-26F2-40FE-AF09-DAD616A92732}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrologyEntity", "HydrologyEntity\HydrologyEntity.csproj", "{5B4DC18C-E5EC-4E53-84ED-8A470612A0DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{1E7C29E8-26F2-40FE-AF09-DAD616A92732}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E7C29E8-26F2-40FE-AF09-DAD616A92732}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E7C29E8-26F2-40FE-AF09-DAD616A92732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B4DC18C-E5EC-4E53-84ED-8A470612A0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B4DC18C-E5EC-4E53-84ED-8A470612A0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B4DC18C-E5EC-4E53-84ED-8A470612A0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B4DC18C-E5EC-4E53-84ED-8A470612A0DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

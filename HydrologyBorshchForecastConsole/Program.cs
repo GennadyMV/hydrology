@@ -20,7 +20,6 @@ namespace HydrologyBorshchForecastConsole
 
                     Console.WriteLine("Start Parser");
                     DateTime currDate = DateTime.Now;
-                    Send(currDate);
                     Request(currDate.AddDays(-5));
                     Request(currDate.AddDays(-4));
                     Request(currDate.AddDays(-3));
@@ -80,7 +79,7 @@ namespace HydrologyBorshchForecastConsole
             theBotReservoir.Parser(dateCurr);
             Thread.Sleep(1000 * 60);
 
-            if (theBotRiver.isNew() == true)
+            if (theBotReservoir.isNew() == true)
             {
                 Send(dateCurr);
             }

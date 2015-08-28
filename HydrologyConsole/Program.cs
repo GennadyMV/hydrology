@@ -75,11 +75,16 @@ namespace HydrologyConsole
         {
             parseDate = DateTime.Now;
            // ExportToExcel();
-            UpdateSchema();
+           // UpdateSchema();
           //  Support03();
            // Support02();
            // Support01();
+            Support04();
             Console.ReadKey();
+        }
+
+        static void Support04()
+        {
         }
         static void ExportToExcel()
         {

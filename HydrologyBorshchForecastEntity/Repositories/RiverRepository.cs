@@ -7,7 +7,7 @@ using NHibernate.Criterion;
 using HydrologyBorshchForecastEntity.Models;
 using HydrologyBorshchForecastEntity.Common;
 
-namespace GeospaceEntity.Repositories
+namespace HydrologyBorshchForecastEntity.Repositories
 {
     public class RiverRepository : IRepository<River>
     {

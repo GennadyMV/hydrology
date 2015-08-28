@@ -1,0 +1,149 @@
+﻿@{
+    ViewBag.Title = "География станций";
+}
+
+@section Scripts
+{
+    @Scripts.Render("~/bundles/selectpicker")
+}
+
+@section Styles
+{
+    @Styles.Render("~/Content/selectpicker")
+}
+
+@model HydrologyWeb.Models.ViewMap
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- Bootstrap -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.13/esri/css/esri.css">
+<link rel="stylesheet" type="text/css" href="http://esri.github.io/bootstrap-map-js/src/css/bootstrapmap.css">
+<!-- Step 1. Add CSS for the mapping components -->
+
+<style type="text/css">
+    #map {
+        display: inline-block;
+        height: auto;
+        min-height: 800px;
+        max-height: 1000px;
+    }
+</style>
+
+<script type="text/javascript">
+    var package_path = "//esri.github.com/bootstrap-map-js/src/js";
+    var dojoConfig = {
+        packages: [{
+            name: "application",
+            location: package_path
+        }]
+    };
+</script>
+<script src="//js.arcgis.com/3.13compact"></script>
+
+<div id="map"></div>
+<script>var dojoConfig = { parseOnLoad: true };</script>
+<script src="http://js.arcgis.com/3.7/"></script>
+<script>
+    //dojo.require("dijit.layout.BorderContainer");
+    dojo.require("esri.map");
+
+    var map;
+
+    function init() {
+        map = new esri.Map("map", {
+            basemap: "osm",
+            center: [138.483, 52.067],
+            zoom: 5
+        });
+
+        dojo.connect(map, "onLoad", function (map) {
+            @foreach (var item in Model.theSites)
+            {
+                if(item.Lat != null && item.Lon != null )
+                { 
+                    <text>
+            markers([@item.Lon.ToString().Replace(',', '.'),
+                @item.Lat.ToString().Replace(',', '.'),
+                '@item.SiteCode.ToString() @item.Name.ToString()']);
+            </text>
+            }
+            }
+
+        });
+
+    }
+    function markers(stat) {
+
+        //setup the symbology for the graphics (route line, start and stop points and water location)
+        var infoSymbol = new esri.symbol.SimpleMarkerSymbol({
+            "color": [0, 0, 0, 0],
+            "size": 5,
+            "angle": -30,
+            "xoffset": 0,
+            "yoffset": 0,
+            "type": "esriSMS",
+            "style": "esriSMSCircle",
+            "outline": { "color": [0, 100, 255, 255], "width": 5, "type": "esriSLS", "style": "esriSLSSolid" }
+        });
+        //add points of interest (water, restroom etc) - add info template describing facilities.
+        //var infoTemplate = new esri.InfoTemplate("${w}", "x: ${a}<br />y: ${b}<br />z: ${c}");
+        var marker1 = new esri.Graphic({
+            "geometry": {
+                "x": stat[0], "y": stat[1],
+                "spatialReference": { "wkid": 4326 }
+            }
+        });
+
+        marker1.setSymbol(infoSymbol);
+        //marker1..setOutline(new SimpleLineSymbol(esri.symbol.SimpleLineSymbol.STYLE_SOLID, new Color([255,0,0]), 2));
+        //marker1.setInfoTemplate(infoTemplate);
+
+        var marker2 = new esri.Graphic({
+            "geometry": {
+                "x": stat[0], "y": stat[1],
+
+                "spatialReference": { "wkid": 4326 }
+            }
+        });
+        var s_text = (new esri.symbol.TextSymbol(stat[2]));
+        s_text.setOffset(0, 10);
+        marker2.setSymbol(s_text);
+        map.graphics.add(marker1);
+        map.graphics.add(marker2);
+
+        //map.infoWindow.resize(110, 100);
+    }
+
+    dojo.ready(init);
+</script>
+@*<!-- jQuery (for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Include all  plugins or individual files as needed -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>*@
+
+
+
+
+
+
+
+@foreach (var item in Model.theSites)
+{
+    <p>
+        @if( item.Lat != null && item.Lon != null)
+        { 
+            <text>
+            @item.Name - @item.SiteCode - @item.Lon - @item.Lat
+            </text>
+        }
+        else
+        {
+            <text>
+            @item.Name - @item.SiteCode
+            </text>
+        }
+    </p>
+}
