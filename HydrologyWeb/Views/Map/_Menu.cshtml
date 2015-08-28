@@ -4,7 +4,14 @@
         <select class="selectpicker">
             @foreach(var item in Model.theSiteTypeCollection)
             {
-                <option value="@item.Id">@item.ShortName - @item.Name</option>
+                if (Model.SelectedSiteType == item.Id)
+                {
+                    <option value="@item.Id" selected>@item.ShortName - @item.Name</option>
+                }
+                else
+                { 
+                    <option value="@item.Id">@item.ShortName - @item.Name</option>
+                }
             }
 
         </select>

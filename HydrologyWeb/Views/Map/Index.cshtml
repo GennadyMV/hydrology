@@ -14,7 +14,13 @@
 
 @model HydrologyWeb.Models.ViewMap
 
-
+@if (Model.theSites == null)
+{
+    <p>
+        <h1>Нет станций по данному типу</h1>
+    </p>
+    return;
+}
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <!-- Bootstrap -->
@@ -60,6 +66,7 @@
         });
 
         dojo.connect(map, "onLoad", function (map) {
+            
             @foreach (var item in Model.theSites)
             {
                 if(item.Lat != null && item.Lon != null )
