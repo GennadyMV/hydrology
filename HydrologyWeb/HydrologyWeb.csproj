@@ -134,11 +134,13 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ForecastController.cs" />
     <Compile Include="Controllers\MapController.cs" />
+    <Compile Include="Controllers\WaterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\BorshchForecast.cs" />
     <Compile Include="Models\ViewMap.cs" />
+    <Compile Include="Models\ViewWater.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\Hydro\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -382,6 +384,8 @@
     <None Include="Service References\Hydro\HydroService4.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Views\Water\Index.cshtml" />
+    <Content Include="Views\Water\_Menu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

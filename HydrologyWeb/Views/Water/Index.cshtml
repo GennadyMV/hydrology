@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "География сети по типу";
+    ViewBag.Title = "География сети по водным объектам";
 }
 
 @section Scripts
@@ -12,12 +12,12 @@
     @Styles.Render("~/Content/selectpicker")
 }
 
-@model HydrologyWeb.Models.ViewMap
+@model HydrologyWeb.Models.ViewWater
 
 @if (Model.theSites == null)
 {
     <p>
-        <h1>Нет станций по данному типу</h1>
+        <h1>Нет станций по данному водному объекту</h1>
     </p>
     return;
 }
@@ -66,11 +66,11 @@
         });
 
         dojo.connect(map, "onLoad", function (map) {
-            
+
             @foreach (var item in Model.theSites)
             {
                 if(item.Lat != null && item.Lon != null )
-                { 
+                {
                     <text>
             markers([@item.Lon.ToString().Replace(',', '.'),
                 @item.Lat.ToString().Replace(',', '.'),
@@ -87,7 +87,7 @@
         //setup the symbology for the graphics (route line, start and stop points and water location)
         var infoSymbol = new esri.symbol.SimpleMarkerSymbol({
             "color": [0, 0, 0, 0],
-            "size": 3,
+            "size": 5,
             "angle": -30,
             "xoffset": 0,
             "yoffset": 0,
@@ -135,7 +135,7 @@
 }
 @foreach (var item in Model.theSites)
 {
-    
+
     <div class="row">
 
         @if (item.Lat != null && item.Lon != null)
@@ -146,94 +146,40 @@
         else
         {
 
-        {
-            index++;
-        }
-        <div class="col-md-1">@index</div>
-        <div class="col-md-2">@item.SiteCode</div>
-        if (item.SiteCode.ToString() == item.Name)
-        {         
+            {
+                index++;
+            }
+            <div class="col-md-1">@index</div>
+            <div class="col-md-2">@item.SiteCode</div>
+            if (item.SiteCode.ToString() == item.Name)
+            {
+                <div class="col-md-2">
+                    <input type="text" class="form-control" id="Name" placeholder="">
+                </div>
+            }
+            else
+            {
+                <div class="col-md-2">@item.Name</div>
+            }
             <div class="col-md-2">
-                <input type="text" class="form-control" id="Name" placeholder="">
-            </div>   
-        }
-        else
-        {            
-            <div class="col-md-2">@item.Name</div>
-        }
-        <div class="col-md-2">
-            <input type="text" class="form-control" id="Lat" placeholder="">
-        </div>
-        <div class="col-md-2">
-            <input type="text" class="form-control" id="Lon" placeholder="">
-        </div>
-        <div id="sitecode-@(item.SiteCode)" class="col-md-2">
-            <input class="btn btn-default save-button" type="button" value="Сохранить">
-        </div>
-        <div class="col-md-1"></div>
+                <input type="text" class="form-control" id="Lat" placeholder="">
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control" id="Lon" placeholder="">
+            </div>
+            <div id="sitecode-@(item.SiteCode)" class="col-md-2">
+                <input class="btn btn-default save-button" type="button" value="Сохранить">
+            </div>
+            <div class="col-md-1"></div>
         }
 
 
     </div>
 }
 
-<br/>
-<br/>
 <br />
 <br />
 <br />
 <br />
-
-<script>
-    $(document).ready(function () {
-        $(".save-button").click(function () {
-            var siteCode = $(this).parent().parent().children()[1];
-            siteCode = $(siteCode).text();
- 
-            var name = $(this).parent().parent().children()[2];
-            if ($(name).children().length > 0) {
-                name = $($(name).children()[0]).val()
-            }
-            else {
-                name = $(name).text();
-            }
-
-            var lat = $(this).parent().parent().children()[3];
-            lat = $($(lat).children()[0]).val();
-
-            var lon = $(this).parent().parent().children()[4];
-            lon = $($(lon).children()[0]).val();
-            
-
-            lat = lat.replace('.', ',');
-            
-            lon = lon.replace('.', ',');
-
-            var param = {siteCode: siteCode, typeId: @Model.SelectedSiteType, name: name, lat: lat, lon: lon}
-            $.ajax({
-                url: '@(Url.Action("EditSite"))',
-                data: param,
-                success: function (data) {
-                    if (data.substring(0, 2) == "Ok" ) {
-                        
-                        var siteCode = data.split(':')[1];
-                        
-                        var obj = $('#sitecode-'+siteCode).parent();
-                        
-                        obj = $(obj).children()[6];
-                        
-                        $(obj).text("Успешно!");
-                    }
-                    else {
-                        alert(data);
-                    }
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    alert("Ошибка отправки запроса. Причина: " + textStatus);
-                }
-            }); // ajax
-
-
-        });
-    });
-</script>
+<br />
+<br />

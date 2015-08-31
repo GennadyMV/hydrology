@@ -1,0 +1,26 @@
+﻿@model HydrologyWeb.Models.ViewWater
+<li>
+    <form class="navbar-form pull-left">
+        <select class="selectpicker">
+            @foreach(var item in Model.theWaterObjectCollection)
+            {
+                if (Model.SelectedWaterObject == item.Id)
+                {
+                    <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                { 
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+
+        </select>
+        <script>
+        $('select.selectpicker').on('change', function(){
+        var selected = $('.selectpicker option:selected').val();
+        var url = "@Url.Action("Index")" + "?WaterObject=" + selected;
+        $(location).attr('href', url);
+        });
+    </script>
+    </form>
+</li>
