@@ -24,6 +24,9 @@ namespace HydrologyWeb
 
             bundles.Add(new ScriptBundle("~/bundles/selectpicker").Include(
                         "~/Scripts/bootstrap-select.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/tablesorter").Include(
+                        "~/Scripts/jquery.tablesorter*"));
             
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
@@ -43,7 +46,14 @@ namespace HydrologyWeb
             bundles.Add(new StyleBundle("~/Content/selectpicker").Include(
                          "~/Content/bootstrap-select.css")
                          );
-            
+
+
+
+            bundles.Add(new StyleBundle("~/Content/tablesorter").Include(
+                         "~/Content/theme.default.css",
+                         "~/Content/theme.bootstrap.css")
+                         );
+
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
                         "~/Content/themes/base/jquery.ui.resizable.css",
