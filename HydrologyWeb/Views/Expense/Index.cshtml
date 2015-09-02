@@ -1,7 +1,36 @@
-﻿@{
+﻿@model HydrologyWeb.Models.ViewExpense
+
+@{
     ViewBag.Title = "Расход воды по уровням";
 }
 
 <h2>Расход воды по уровням</h2>
 
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Наименование</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.theList)
+        {
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @Html.ActionLink("Смотреть", "Show", new { id = @item.Name }, new { @class = "btn btn-default", @type="button" })
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
 
+@using (Html.BeginForm("Upload", "Expense", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="file" />
+    <input type="submit" name="Submit" id="Submit" value="Добавить" />
+}

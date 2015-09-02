@@ -1,0 +1,20 @@
+﻿
+@model string[ , ]
+<h2>@ViewBag.Title</h2>
+
+<table class="table table-bordered" >
+    <tbody>
+        @for (int i = 0; i < ViewBag.Rows; i++)
+        {
+            <tr>
+                @for (int j = 0; j < ViewBag.Columns; j++)
+                {
+                 <th>
+                     @Model[i,j]
+                 </th>   
+                
+                }
+            </tr>
+        }
+    </tbody>
+</table>

@@ -14,7 +14,7 @@ namespace HydrologyWeb.Models
         public List<ViewExpenseEntity> theList;
         public void Add(string fileName)
         {
-            ViewExpenseEntity item = new ViewExpenseEntity()
+            ViewExpenseEntity item = new ViewExpenseEntity();    
             item.Name = fileName;
             this.theList.Add(item);
         }
