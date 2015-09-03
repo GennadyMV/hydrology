@@ -56,8 +56,9 @@ namespace HydrologyWeb.Controllers
                 }
                 else
                 {
-                    
-                    theHydro.SaveSiteWithRelation(theSite, null);
+                    Hydro.WaterObject wo = new Hydro.WaterObject();
+                    wo.Id = -1;
+                    theHydro.SaveSiteWithRelation(theSite, wo);
                 }
 
             }
