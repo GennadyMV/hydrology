@@ -1,5 +1,6 @@
 ﻿using HydrologyBorshchForecastCore;
 using HydrologyBorshchForecastEntity.Models;
+using HydrologyCore.Agk;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -80,11 +81,15 @@ namespace HydrologyConsole
            // Support02();
            // Support01();
             Support04();
+            Console.WriteLine("Ok");
             Console.ReadKey();
         }
 
         static void Support04()
         {
+            HydrologyCore.Logger.ILogger theLogger = new HydrologyCore.Logger.LoggerNLog();
+            IExport theExport = new ExportFromHydroService(theLogger);
+            theExport.Run();
         }
         static void ExportToExcel()
         {

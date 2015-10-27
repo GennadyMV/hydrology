@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E72163EF-9D8D-45EE-93C3-13198EADDE8D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{7E85DCD2-609A-49B2-8FFD-C1BAAFB38395}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HydrologyConsole</RootNamespace>
-    <AssemblyName>HydrologyConsole</AssemblyName>
+    <RootNamespace>HydrologyCore</RootNamespace>
+    <AssemblyName>HydrologyCore</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,18 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.0.1\lib\net45\NLog.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,7 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Agk\ExportFromHydroService.cs" />
+    <Compile Include="Agk\IExport.cs" />
+    <Compile Include="Logger\ILogger.cs" />
+    <Compile Include="Logger\LoggerConsole.cs" />
+    <Compile Include="Logger\LoggerNLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\Hydro\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -60,38 +58,69 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="app.config" />
+    <EmbeddedResource Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\HydrologyCore.Hydro.Category.datasource" />
-    <None Include="Properties\DataSources\HydrologyCore.Hydro.ClimateInfo.datasource" />
-    <None Include="Properties\DataSources\HydrologyCore.Hydro.Criteria.datasource" />
-    <None Include="Properties\DataSources\HydrologyCore.Hydro.CriteriaType.datasource" />
-    <None Include="Properties\DataSources\HydrologyCore.Hydro.Curve.datasource" />
-    <None Include="Properties\DataSources\HydrologyCore.Hydro.DataSource.datasource" />
-    <None Include="Properties\DataSources\HydrologyCore.Hydro.DataValue.datasource" />
-    <None Include="Properties\DataSources\HydrologyCore.Hydro.GeoType.datasource" />
-    <None Include="Properties\DataSources\HydrologyCore.Hydro.Qualifier.datasource" />
-    <None Include="Properties\DataSources\HydrologyCore.Hydro.SensorDifference.datasource" />
-    <None Include="Properties\DataSources\HydrologyCore.Hydro.Site.datasource" />
-    <None Include="Properties\DataSources\HydrologyCore.Hydro.SiteAttribute.datasource" />
-    <None Include="Properties\DataSources\HydrologyCore.Hydro.SiteAttributeType.datasource" />
-    <None Include="Properties\DataSources\HydrologyCore.Hydro.Variable.datasource" />
-    <None Include="Service References\Hydro\HydrologyConsole.Hydro.DataValueCollection.datasource">
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.Category.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\Hydro\HydrologyConsole.Hydro.SiteAttributeCollection.datasource">
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.ClimateInfo.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\Hydro\HydrologyConsole.Hydro.SiteGroupCollection.datasource">
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.Criteria.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\Hydro\HydrologyConsole.Hydro.SiteTypeCollection.datasource">
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.CriteriaType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\Hydro\HydrologyConsole.Hydro.VariableCollection.datasource">
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.Curve.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\Hydro\HydrologyConsole.Hydro.WaterObjectCollection.datasource">
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.DataSource.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.DataValue.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.DataValueCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.GeoType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.Qualifier.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.SensorDifference.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.Site.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.SiteAttribute.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.SiteAttributeCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.SiteAttributeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.SiteGroupCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.SiteTypeCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.Variable.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.VariableCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Hydro\HydrologyCore.Hydro.WaterObjectCollection.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\Hydro\HydroService.wsdl" />
@@ -112,21 +141,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HydrologyBorshchForecastCore\HydrologyBorshchForecastCore.csproj">
-      <Project>{e292a6fd-0241-469c-8cf5-fd23ddebdf15}</Project>
-      <Name>HydrologyBorshchForecastCore</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HydrologyBorshchForecastEntity\HydrologyBorshchForecastEntity.csproj">
-      <Project>{6586003c-7787-4031-bb86-6a97e1c40b99}</Project>
-      <Name>HydrologyBorshchForecastEntity</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HydrologyCore\HydrologyCore.csproj">
-      <Project>{7e85dcd2-609a-49b2-8ffd-c1baafb38395}</Project>
-      <Name>HydrologyCore</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HydrologyEntity\HydrologyEntity.csproj">
-      <Project>{5b4dc18c-e5ec-4e53-84ed-8a470612a0db}</Project>
-      <Name>HydrologyEntity</Name>
+    <ProjectReference Include="..\ProfileSource\Profile.csproj">
+      <Project>{f8de8838-3350-4f1c-9b43-50dfe42db6a8}</Project>
+      <Name>Profile</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

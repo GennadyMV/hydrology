@@ -15,3393 +15,44 @@ namespace HydrologyConsole.Hydro {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Site", Namespace="http://schemas.datacontract.org/2004/07/", IsReference=true)]
-    [System.SerializableAttribute()]
-    public partial class Site : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string BorderField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CommentField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<float> HeightField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool IsComplexField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<decimal> LatField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> LatLonDatumIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> LocalProjectionIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<float> LocalXField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<float> LocalYField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<decimal> LonField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.Site ParentSiteField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<float> PosAccuracy_mField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> RegionIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SiteCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int SiteIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.Site[] SitesField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.SiteType TypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private float UtcOffsetField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Border {
-            get {
-                return this.BorderField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.BorderField, value) != true)) {
-                    this.BorderField = value;
-                    this.RaisePropertyChanged("Border");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Comment {
-            get {
-                return this.CommentField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CommentField, value) != true)) {
-                    this.CommentField = value;
-                    this.RaisePropertyChanged("Comment");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<float> Height {
-            get {
-                return this.HeightField;
-            }
-            set {
-                if ((this.HeightField.Equals(value) != true)) {
-                    this.HeightField = value;
-                    this.RaisePropertyChanged("Height");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool IsComplex {
-            get {
-                return this.IsComplexField;
-            }
-            set {
-                if ((this.IsComplexField.Equals(value) != true)) {
-                    this.IsComplexField = value;
-                    this.RaisePropertyChanged("IsComplex");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<decimal> Lat {
-            get {
-                return this.LatField;
-            }
-            set {
-                if ((this.LatField.Equals(value) != true)) {
-                    this.LatField = value;
-                    this.RaisePropertyChanged("Lat");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> LatLonDatumId {
-            get {
-                return this.LatLonDatumIdField;
-            }
-            set {
-                if ((this.LatLonDatumIdField.Equals(value) != true)) {
-                    this.LatLonDatumIdField = value;
-                    this.RaisePropertyChanged("LatLonDatumId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> LocalProjectionId {
-            get {
-                return this.LocalProjectionIdField;
-            }
-            set {
-                if ((this.LocalProjectionIdField.Equals(value) != true)) {
-                    this.LocalProjectionIdField = value;
-                    this.RaisePropertyChanged("LocalProjectionId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<float> LocalX {
-            get {
-                return this.LocalXField;
-            }
-            set {
-                if ((this.LocalXField.Equals(value) != true)) {
-                    this.LocalXField = value;
-                    this.RaisePropertyChanged("LocalX");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<float> LocalY {
-            get {
-                return this.LocalYField;
-            }
-            set {
-                if ((this.LocalYField.Equals(value) != true)) {
-                    this.LocalYField = value;
-                    this.RaisePropertyChanged("LocalY");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<decimal> Lon {
-            get {
-                return this.LonField;
-            }
-            set {
-                if ((this.LonField.Equals(value) != true)) {
-                    this.LonField = value;
-                    this.RaisePropertyChanged("Lon");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
-            get {
-                return this.NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.Site ParentSite {
-            get {
-                return this.ParentSiteField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ParentSiteField, value) != true)) {
-                    this.ParentSiteField = value;
-                    this.RaisePropertyChanged("ParentSite");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<float> PosAccuracy_m {
-            get {
-                return this.PosAccuracy_mField;
-            }
-            set {
-                if ((this.PosAccuracy_mField.Equals(value) != true)) {
-                    this.PosAccuracy_mField = value;
-                    this.RaisePropertyChanged("PosAccuracy_m");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> RegionId {
-            get {
-                return this.RegionIdField;
-            }
-            set {
-                if ((this.RegionIdField.Equals(value) != true)) {
-                    this.RegionIdField = value;
-                    this.RaisePropertyChanged("RegionId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string SiteCode {
-            get {
-                return this.SiteCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SiteCodeField, value) != true)) {
-                    this.SiteCodeField = value;
-                    this.RaisePropertyChanged("SiteCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int SiteId {
-            get {
-                return this.SiteIdField;
-            }
-            set {
-                if ((this.SiteIdField.Equals(value) != true)) {
-                    this.SiteIdField = value;
-                    this.RaisePropertyChanged("SiteId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.Site[] Sites {
-            get {
-                return this.SitesField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SitesField, value) != true)) {
-                    this.SitesField = value;
-                    this.RaisePropertyChanged("Sites");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.SiteType Type {
-            get {
-                return this.TypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TypeField, value) != true)) {
-                    this.TypeField = value;
-                    this.RaisePropertyChanged("Type");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public float UtcOffset {
-            get {
-                return this.UtcOffsetField;
-            }
-            set {
-                if ((this.UtcOffsetField.Equals(value) != true)) {
-                    this.UtcOffsetField = value;
-                    this.RaisePropertyChanged("UtcOffset");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SiteType", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class SiteType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ShortNameField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
-            get {
-                return this.NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ShortName {
-            get {
-                return this.ShortNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ShortNameField, value) != true)) {
-                    this.ShortNameField = value;
-                    this.RaisePropertyChanged("ShortName");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.CollectionDataContractAttribute(Name="DataValueCollection", Namespace="http://schemas.datacontract.org/2004/07/", ItemName="DataValue")]
     [System.SerializableAttribute()]
-    public class DataValueCollection : System.Collections.Generic.List<HydrologyConsole.Hydro.DataValue> {
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="DataValue", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class DataValue : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<float> AccuracyField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CensorCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime CollectDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> DataSourceIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime DateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime DateUTCField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> DerivedFromIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int[] DerivedFromValuesField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int MethodIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> OffsetTypeIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<float> OffsetValueField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int[] QualifiersField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int QualityControlLevelIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int SiteIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int SourceIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private float UTCOffsetField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private float ValueField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int ValueCharacterIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int VariableIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int VersionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string VersionCommentField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<float> Accuracy {
-            get {
-                return this.AccuracyField;
-            }
-            set {
-                if ((this.AccuracyField.Equals(value) != true)) {
-                    this.AccuracyField = value;
-                    this.RaisePropertyChanged("Accuracy");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string CensorCode {
-            get {
-                return this.CensorCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CensorCodeField, value) != true)) {
-                    this.CensorCodeField = value;
-                    this.RaisePropertyChanged("CensorCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime CollectDate {
-            get {
-                return this.CollectDateField;
-            }
-            set {
-                if ((this.CollectDateField.Equals(value) != true)) {
-                    this.CollectDateField = value;
-                    this.RaisePropertyChanged("CollectDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> DataSourceId {
-            get {
-                return this.DataSourceIdField;
-            }
-            set {
-                if ((this.DataSourceIdField.Equals(value) != true)) {
-                    this.DataSourceIdField = value;
-                    this.RaisePropertyChanged("DataSourceId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Date {
-            get {
-                return this.DateField;
-            }
-            set {
-                if ((this.DateField.Equals(value) != true)) {
-                    this.DateField = value;
-                    this.RaisePropertyChanged("Date");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime DateUTC {
-            get {
-                return this.DateUTCField;
-            }
-            set {
-                if ((this.DateUTCField.Equals(value) != true)) {
-                    this.DateUTCField = value;
-                    this.RaisePropertyChanged("DateUTC");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> DerivedFromId {
-            get {
-                return this.DerivedFromIdField;
-            }
-            set {
-                if ((this.DerivedFromIdField.Equals(value) != true)) {
-                    this.DerivedFromIdField = value;
-                    this.RaisePropertyChanged("DerivedFromId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int[] DerivedFromValues {
-            get {
-                return this.DerivedFromValuesField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DerivedFromValuesField, value) != true)) {
-                    this.DerivedFromValuesField = value;
-                    this.RaisePropertyChanged("DerivedFromValues");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int MethodId {
-            get {
-                return this.MethodIdField;
-            }
-            set {
-                if ((this.MethodIdField.Equals(value) != true)) {
-                    this.MethodIdField = value;
-                    this.RaisePropertyChanged("MethodId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> OffsetTypeId {
-            get {
-                return this.OffsetTypeIdField;
-            }
-            set {
-                if ((this.OffsetTypeIdField.Equals(value) != true)) {
-                    this.OffsetTypeIdField = value;
-                    this.RaisePropertyChanged("OffsetTypeId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<float> OffsetValue {
-            get {
-                return this.OffsetValueField;
-            }
-            set {
-                if ((this.OffsetValueField.Equals(value) != true)) {
-                    this.OffsetValueField = value;
-                    this.RaisePropertyChanged("OffsetValue");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int[] Qualifiers {
-            get {
-                return this.QualifiersField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.QualifiersField, value) != true)) {
-                    this.QualifiersField = value;
-                    this.RaisePropertyChanged("Qualifiers");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int QualityControlLevelId {
-            get {
-                return this.QualityControlLevelIdField;
-            }
-            set {
-                if ((this.QualityControlLevelIdField.Equals(value) != true)) {
-                    this.QualityControlLevelIdField = value;
-                    this.RaisePropertyChanged("QualityControlLevelId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int SiteId {
-            get {
-                return this.SiteIdField;
-            }
-            set {
-                if ((this.SiteIdField.Equals(value) != true)) {
-                    this.SiteIdField = value;
-                    this.RaisePropertyChanged("SiteId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int SourceId {
-            get {
-                return this.SourceIdField;
-            }
-            set {
-                if ((this.SourceIdField.Equals(value) != true)) {
-                    this.SourceIdField = value;
-                    this.RaisePropertyChanged("SourceId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public float UTCOffset {
-            get {
-                return this.UTCOffsetField;
-            }
-            set {
-                if ((this.UTCOffsetField.Equals(value) != true)) {
-                    this.UTCOffsetField = value;
-                    this.RaisePropertyChanged("UTCOffset");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public float Value {
-            get {
-                return this.ValueField;
-            }
-            set {
-                if ((this.ValueField.Equals(value) != true)) {
-                    this.ValueField = value;
-                    this.RaisePropertyChanged("Value");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ValueCharacterId {
-            get {
-                return this.ValueCharacterIdField;
-            }
-            set {
-                if ((this.ValueCharacterIdField.Equals(value) != true)) {
-                    this.ValueCharacterIdField = value;
-                    this.RaisePropertyChanged("ValueCharacterId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int VariableId {
-            get {
-                return this.VariableIdField;
-            }
-            set {
-                if ((this.VariableIdField.Equals(value) != true)) {
-                    this.VariableIdField = value;
-                    this.RaisePropertyChanged("VariableId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Version {
-            get {
-                return this.VersionField;
-            }
-            set {
-                if ((this.VersionField.Equals(value) != true)) {
-                    this.VersionField = value;
-                    this.RaisePropertyChanged("Version");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string VersionComment {
-            get {
-                return this.VersionCommentField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.VersionCommentField, value) != true)) {
-                    this.VersionCommentField = value;
-                    this.RaisePropertyChanged("VersionComment");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="DataSource", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class DataSource : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.CodeForm CodeFormField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime CollectDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime DateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime DateUTCField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string HashField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime ReceiveDateUTCField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ValueField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.CodeForm CodeForm {
-            get {
-                return this.CodeFormField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CodeFormField, value) != true)) {
-                    this.CodeFormField = value;
-                    this.RaisePropertyChanged("CodeForm");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime CollectDate {
-            get {
-                return this.CollectDateField;
-            }
-            set {
-                if ((this.CollectDateField.Equals(value) != true)) {
-                    this.CollectDateField = value;
-                    this.RaisePropertyChanged("CollectDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Date {
-            get {
-                return this.DateField;
-            }
-            set {
-                if ((this.DateField.Equals(value) != true)) {
-                    this.DateField = value;
-                    this.RaisePropertyChanged("Date");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime DateUTC {
-            get {
-                return this.DateUTCField;
-            }
-            set {
-                if ((this.DateUTCField.Equals(value) != true)) {
-                    this.DateUTCField = value;
-                    this.RaisePropertyChanged("DateUTC");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Hash {
-            get {
-                return this.HashField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.HashField, value) != true)) {
-                    this.HashField = value;
-                    this.RaisePropertyChanged("Hash");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime ReceiveDateUTC {
-            get {
-                return this.ReceiveDateUTCField;
-            }
-            set {
-                if ((this.ReceiveDateUTCField.Equals(value) != true)) {
-                    this.ReceiveDateUTCField = value;
-                    this.RaisePropertyChanged("ReceiveDateUTC");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Value {
-            get {
-                return this.ValueField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ValueField, value) != true)) {
-                    this.ValueField = value;
-                    this.RaisePropertyChanged("Value");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CodeForm", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class CodeForm : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DescriptionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Description {
-            get {
-                return this.DescriptionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DescriptionField, value) != true)) {
-                    this.DescriptionField = value;
-                    this.RaisePropertyChanged("Description");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="HSExceptionOfInnerServiceExceptionMTRdQN6P", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException))]
-    public partial class HSExceptionOfInnerServiceExceptionMTRdQN6P : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MessageField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Message {
-            get {
-                return this.MessageField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
-                    this.MessageField = value;
-                    this.RaisePropertyChanged("Message");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class InnerServiceException : HydrologyConsole.Hydro.HSExceptionOfInnerServiceExceptionMTRdQN6P {
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string GuidField;
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Guid {
-            get {
-                return this.GuidField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.GuidField, value) != true)) {
-                    this.GuidField = value;
-                    this.RaisePropertyChanged("Guid");
-                }
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="HSExceptionOfInputDataExceptionMTRdQN6P", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(HydrologyConsole.Hydro.InputDataException))]
-    public partial class HSExceptionOfInputDataExceptionMTRdQN6P : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MessageField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Message {
-            get {
-                return this.MessageField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
-                    this.MessageField = value;
-                    this.RaisePropertyChanged("Message");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class InputDataException : HydrologyConsole.Hydro.HSExceptionOfInputDataExceptionMTRdQN6P {
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string InvalidParamNameField;
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string InvalidParamName {
-            get {
-                return this.InvalidParamNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.InvalidParamNameField, value) != true)) {
-                    this.InvalidParamNameField = value;
-                    this.RaisePropertyChanged("InvalidParamName");
-                }
-            }
-        }
+    public class DataValueCollection : System.Collections.Generic.List<HydrologyCore.Hydro.DataValue> {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.CollectionDataContractAttribute(Name="WaterObjectCollection", Namespace="http://schemas.datacontract.org/2004/07/", ItemName="WaterObject")]
     [System.SerializableAttribute()]
-    public class WaterObjectCollection : System.Collections.Generic.List<HydrologyConsole.Hydro.WaterObject> {
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="WaterObject", Namespace="http://schemas.datacontract.org/2004/07/", IsReference=true)]
-    [System.SerializableAttribute()]
-    public partial class WaterObject : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.WaterObject FallIntoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> FallIntoIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int OrderField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.Site[] SitesField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.GeoType TypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.WaterObjectCollection WateObjectsField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.WaterObject FallInto {
-            get {
-                return this.FallIntoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.FallIntoField, value) != true)) {
-                    this.FallIntoField = value;
-                    this.RaisePropertyChanged("FallInto");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> FallIntoId {
-            get {
-                return this.FallIntoIdField;
-            }
-            set {
-                if ((this.FallIntoIdField.Equals(value) != true)) {
-                    this.FallIntoIdField = value;
-                    this.RaisePropertyChanged("FallIntoId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
-            get {
-                return this.NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Order {
-            get {
-                return this.OrderField;
-            }
-            set {
-                if ((this.OrderField.Equals(value) != true)) {
-                    this.OrderField = value;
-                    this.RaisePropertyChanged("Order");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.Site[] Sites {
-            get {
-                return this.SitesField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SitesField, value) != true)) {
-                    this.SitesField = value;
-                    this.RaisePropertyChanged("Sites");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.GeoType Type {
-            get {
-                return this.TypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TypeField, value) != true)) {
-                    this.TypeField = value;
-                    this.RaisePropertyChanged("Type");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.WaterObjectCollection WateObjects {
-            get {
-                return this.WateObjectsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.WateObjectsField, value) != true)) {
-                    this.WateObjectsField = value;
-                    this.RaisePropertyChanged("WateObjects");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="GeoType", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class GeoType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DefinitionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string RuNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string TermField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Definition {
-            get {
-                return this.DefinitionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DefinitionField, value) != true)) {
-                    this.DefinitionField = value;
-                    this.RaisePropertyChanged("Definition");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string RuName {
-            get {
-                return this.RuNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RuNameField, value) != true)) {
-                    this.RuNameField = value;
-                    this.RaisePropertyChanged("RuName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Term {
-            get {
-                return this.TermField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TermField, value) != true)) {
-                    this.TermField = value;
-                    this.RaisePropertyChanged("Term");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ClimateInfo", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class ClimateInfo : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> DateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime DateFromField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> DateToField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> DayField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> DecadeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> MonthField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int SiteIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.ClimateInfoType TypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private float ValueField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int VariableIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> YearField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<System.DateTime> Date {
-            get {
-                return this.DateField;
-            }
-            set {
-                if ((this.DateField.Equals(value) != true)) {
-                    this.DateField = value;
-                    this.RaisePropertyChanged("Date");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime DateFrom {
-            get {
-                return this.DateFromField;
-            }
-            set {
-                if ((this.DateFromField.Equals(value) != true)) {
-                    this.DateFromField = value;
-                    this.RaisePropertyChanged("DateFrom");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<System.DateTime> DateTo {
-            get {
-                return this.DateToField;
-            }
-            set {
-                if ((this.DateToField.Equals(value) != true)) {
-                    this.DateToField = value;
-                    this.RaisePropertyChanged("DateTo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> Day {
-            get {
-                return this.DayField;
-            }
-            set {
-                if ((this.DayField.Equals(value) != true)) {
-                    this.DayField = value;
-                    this.RaisePropertyChanged("Day");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> Decade {
-            get {
-                return this.DecadeField;
-            }
-            set {
-                if ((this.DecadeField.Equals(value) != true)) {
-                    this.DecadeField = value;
-                    this.RaisePropertyChanged("Decade");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> Month {
-            get {
-                return this.MonthField;
-            }
-            set {
-                if ((this.MonthField.Equals(value) != true)) {
-                    this.MonthField = value;
-                    this.RaisePropertyChanged("Month");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int SiteId {
-            get {
-                return this.SiteIdField;
-            }
-            set {
-                if ((this.SiteIdField.Equals(value) != true)) {
-                    this.SiteIdField = value;
-                    this.RaisePropertyChanged("SiteId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.ClimateInfoType Type {
-            get {
-                return this.TypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TypeField, value) != true)) {
-                    this.TypeField = value;
-                    this.RaisePropertyChanged("Type");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public float Value {
-            get {
-                return this.ValueField;
-            }
-            set {
-                if ((this.ValueField.Equals(value) != true)) {
-                    this.ValueField = value;
-                    this.RaisePropertyChanged("Value");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int VariableId {
-            get {
-                return this.VariableIdField;
-            }
-            set {
-                if ((this.VariableIdField.Equals(value) != true)) {
-                    this.VariableIdField = value;
-                    this.RaisePropertyChanged("VariableId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> Year {
-            get {
-                return this.YearField;
-            }
-            set {
-                if ((this.YearField.Equals(value) != true)) {
-                    this.YearField = value;
-                    this.RaisePropertyChanged("Year");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ClimateInfoType", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class ClimateInfoType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CommentField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Comment {
-            get {
-                return this.CommentField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CommentField, value) != true)) {
-                    this.CommentField = value;
-                    this.RaisePropertyChanged("Comment");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
-            get {
-                return this.NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Criteria", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class Criteria : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime BeginDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<float> BeginValueField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<float> EndValueField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int SiteIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.CriteriaType TypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int VariableIdField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime BeginDate {
-            get {
-                return this.BeginDateField;
-            }
-            set {
-                if ((this.BeginDateField.Equals(value) != true)) {
-                    this.BeginDateField = value;
-                    this.RaisePropertyChanged("BeginDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<float> BeginValue {
-            get {
-                return this.BeginValueField;
-            }
-            set {
-                if ((this.BeginValueField.Equals(value) != true)) {
-                    this.BeginValueField = value;
-                    this.RaisePropertyChanged("BeginValue");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<float> EndValue {
-            get {
-                return this.EndValueField;
-            }
-            set {
-                if ((this.EndValueField.Equals(value) != true)) {
-                    this.EndValueField = value;
-                    this.RaisePropertyChanged("EndValue");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int SiteId {
-            get {
-                return this.SiteIdField;
-            }
-            set {
-                if ((this.SiteIdField.Equals(value) != true)) {
-                    this.SiteIdField = value;
-                    this.RaisePropertyChanged("SiteId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.CriteriaType Type {
-            get {
-                return this.TypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TypeField, value) != true)) {
-                    this.TypeField = value;
-                    this.RaisePropertyChanged("Type");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int VariableId {
-            get {
-                return this.VariableIdField;
-            }
-            set {
-                if ((this.VariableIdField.Equals(value) != true)) {
-                    this.VariableIdField = value;
-                    this.RaisePropertyChanged("VariableId");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CriteriaType", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class CriteriaType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string AbbreviationField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CommentField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Abbreviation {
-            get {
-                return this.AbbreviationField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.AbbreviationField, value) != true)) {
-                    this.AbbreviationField = value;
-                    this.RaisePropertyChanged("Abbreviation");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Comment {
-            get {
-                return this.CommentField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CommentField, value) != true)) {
-                    this.CommentField = value;
-                    this.RaisePropertyChanged("Comment");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
+    public class WaterObjectCollection : System.Collections.Generic.List<HydrologyCore.Hydro.WaterObject> {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.CollectionDataContractAttribute(Name="SiteTypeCollection", Namespace="http://schemas.datacontract.org/2004/07/", ItemName="SiteType")]
     [System.SerializableAttribute()]
-    public class SiteTypeCollection : System.Collections.Generic.List<HydrologyConsole.Hydro.SiteType> {
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Variable", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class Variable : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DataTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string GeneralCategoryField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool IsRegularField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private float NoDataValueField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SampleMediumField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private float TimeSupportField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.Unit TimeUnitField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int TimeUnitIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.Unit UnitField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ValueTypeField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string DataType {
-            get {
-                return this.DataTypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DataTypeField, value) != true)) {
-                    this.DataTypeField = value;
-                    this.RaisePropertyChanged("DataType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string GeneralCategory {
-            get {
-                return this.GeneralCategoryField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.GeneralCategoryField, value) != true)) {
-                    this.GeneralCategoryField = value;
-                    this.RaisePropertyChanged("GeneralCategory");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool IsRegular {
-            get {
-                return this.IsRegularField;
-            }
-            set {
-                if ((this.IsRegularField.Equals(value) != true)) {
-                    this.IsRegularField = value;
-                    this.RaisePropertyChanged("IsRegular");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
-            get {
-                return this.NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public float NoDataValue {
-            get {
-                return this.NoDataValueField;
-            }
-            set {
-                if ((this.NoDataValueField.Equals(value) != true)) {
-                    this.NoDataValueField = value;
-                    this.RaisePropertyChanged("NoDataValue");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string SampleMedium {
-            get {
-                return this.SampleMediumField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SampleMediumField, value) != true)) {
-                    this.SampleMediumField = value;
-                    this.RaisePropertyChanged("SampleMedium");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public float TimeSupport {
-            get {
-                return this.TimeSupportField;
-            }
-            set {
-                if ((this.TimeSupportField.Equals(value) != true)) {
-                    this.TimeSupportField = value;
-                    this.RaisePropertyChanged("TimeSupport");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.Unit TimeUnit {
-            get {
-                return this.TimeUnitField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TimeUnitField, value) != true)) {
-                    this.TimeUnitField = value;
-                    this.RaisePropertyChanged("TimeUnit");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int TimeUnitId {
-            get {
-                return this.TimeUnitIdField;
-            }
-            set {
-                if ((this.TimeUnitIdField.Equals(value) != true)) {
-                    this.TimeUnitIdField = value;
-                    this.RaisePropertyChanged("TimeUnitId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.Unit Unit {
-            get {
-                return this.UnitField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.UnitField, value) != true)) {
-                    this.UnitField = value;
-                    this.RaisePropertyChanged("Unit");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ValueType {
-            get {
-                return this.ValueTypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ValueTypeField, value) != true)) {
-                    this.ValueTypeField = value;
-                    this.RaisePropertyChanged("ValueType");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Unit", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class Unit : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string AbbreviationField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Abbreviation {
-            get {
-                return this.AbbreviationField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.AbbreviationField, value) != true)) {
-                    this.AbbreviationField = value;
-                    this.RaisePropertyChanged("Abbreviation");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
-            get {
-                return this.NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
+    public class SiteTypeCollection : System.Collections.Generic.List<HydrologyCore.Hydro.SiteType> {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.CollectionDataContractAttribute(Name="VariableCollection", Namespace="http://schemas.datacontract.org/2004/07/", ItemName="Variable")]
     [System.SerializableAttribute()]
-    public class VariableCollection : System.Collections.Generic.List<HydrologyConsole.Hydro.Variable> {
+    public class VariableCollection : System.Collections.Generic.List<HydrologyCore.Hydro.Variable> {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.CollectionDataContractAttribute(Name="SiteGroupCollection", Namespace="http://schemas.datacontract.org/2004/07/", ItemName="SiteGroup")]
     [System.SerializableAttribute()]
-    public class SiteGroupCollection : System.Collections.Generic.List<HydrologyConsole.Hydro.SiteGroup> {
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SiteGroup", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class SiteGroup : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DescriptionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.Site[] SitesField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Description {
-            get {
-                return this.DescriptionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DescriptionField, value) != true)) {
-                    this.DescriptionField = value;
-                    this.RaisePropertyChanged("Description");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.Site[] Sites {
-            get {
-                return this.SitesField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SitesField, value) != true)) {
-                    this.SitesField = value;
-                    this.RaisePropertyChanged("Sites");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
+    public class SiteGroupCollection : System.Collections.Generic.List<HydrologyCore.Hydro.SiteGroup> {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.CollectionDataContractAttribute(Name="SiteAttributeCollection", Namespace="http://schemas.datacontract.org/2004/07/", ItemName="SiteAttribute")]
     [System.SerializableAttribute()]
-    public class SiteAttributeCollection : System.Collections.Generic.List<HydrologyConsole.Hydro.SiteAttribute> {
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SiteAttribute", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class SiteAttribute : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime BeginDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int SiteIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.SiteAttributeType TypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ValueField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime BeginDate {
-            get {
-                return this.BeginDateField;
-            }
-            set {
-                if ((this.BeginDateField.Equals(value) != true)) {
-                    this.BeginDateField = value;
-                    this.RaisePropertyChanged("BeginDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int SiteId {
-            get {
-                return this.SiteIdField;
-            }
-            set {
-                if ((this.SiteIdField.Equals(value) != true)) {
-                    this.SiteIdField = value;
-                    this.RaisePropertyChanged("SiteId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.SiteAttributeType Type {
-            get {
-                return this.TypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TypeField, value) != true)) {
-                    this.TypeField = value;
-                    this.RaisePropertyChanged("Type");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Value {
-            get {
-                return this.ValueField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ValueField, value) != true)) {
-                    this.ValueField = value;
-                    this.RaisePropertyChanged("Value");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SiteAttributeType", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class SiteAttributeType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ValueTypeField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Name {
-            get {
-                return this.NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                    this.NameField = value;
-                    this.RaisePropertyChanged("Name");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ValueType {
-            get {
-                return this.ValueTypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ValueTypeField, value) != true)) {
-                    this.ValueTypeField = value;
-                    this.RaisePropertyChanged("ValueType");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SensorDifference", Namespace="http://schemas.datacontract.org/2004/07/AmurHydroLibrary.Reports")]
-    [System.SerializableAttribute()]
-    public partial class SensorDifference : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CntFaultField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CntSite1Field;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CntSite2Field;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CntUnionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private float CriteriaField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string Site1NameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string Site2NameField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CntFault {
-            get {
-                return this.CntFaultField;
-            }
-            set {
-                if ((this.CntFaultField.Equals(value) != true)) {
-                    this.CntFaultField = value;
-                    this.RaisePropertyChanged("CntFault");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CntSite1 {
-            get {
-                return this.CntSite1Field;
-            }
-            set {
-                if ((this.CntSite1Field.Equals(value) != true)) {
-                    this.CntSite1Field = value;
-                    this.RaisePropertyChanged("CntSite1");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CntSite2 {
-            get {
-                return this.CntSite2Field;
-            }
-            set {
-                if ((this.CntSite2Field.Equals(value) != true)) {
-                    this.CntSite2Field = value;
-                    this.RaisePropertyChanged("CntSite2");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CntUnion {
-            get {
-                return this.CntUnionField;
-            }
-            set {
-                if ((this.CntUnionField.Equals(value) != true)) {
-                    this.CntUnionField = value;
-                    this.RaisePropertyChanged("CntUnion");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public float Criteria {
-            get {
-                return this.CriteriaField;
-            }
-            set {
-                if ((this.CriteriaField.Equals(value) != true)) {
-                    this.CriteriaField = value;
-                    this.RaisePropertyChanged("Criteria");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Site1Name {
-            get {
-                return this.Site1NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.Site1NameField, value) != true)) {
-                    this.Site1NameField = value;
-                    this.RaisePropertyChanged("Site1Name");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Site2Name {
-            get {
-                return this.Site2NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.Site2NameField, value) != true)) {
-                    this.Site2NameField = value;
-                    this.RaisePropertyChanged("Site2Name");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Curve", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class Curve : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> BeginDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DescriptionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> EndDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.CurveSerie[] SeriesesField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int SiteIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> SiteXIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> SiteYIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int VariableXIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int VariableYIdField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<System.DateTime> BeginDate {
-            get {
-                return this.BeginDateField;
-            }
-            set {
-                if ((this.BeginDateField.Equals(value) != true)) {
-                    this.BeginDateField = value;
-                    this.RaisePropertyChanged("BeginDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Description {
-            get {
-                return this.DescriptionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DescriptionField, value) != true)) {
-                    this.DescriptionField = value;
-                    this.RaisePropertyChanged("Description");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<System.DateTime> EndDate {
-            get {
-                return this.EndDateField;
-            }
-            set {
-                if ((this.EndDateField.Equals(value) != true)) {
-                    this.EndDateField = value;
-                    this.RaisePropertyChanged("EndDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.CurveSerie[] Serieses {
-            get {
-                return this.SeriesesField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SeriesesField, value) != true)) {
-                    this.SeriesesField = value;
-                    this.RaisePropertyChanged("Serieses");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int SiteId {
-            get {
-                return this.SiteIdField;
-            }
-            set {
-                if ((this.SiteIdField.Equals(value) != true)) {
-                    this.SiteIdField = value;
-                    this.RaisePropertyChanged("SiteId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> SiteXId {
-            get {
-                return this.SiteXIdField;
-            }
-            set {
-                if ((this.SiteXIdField.Equals(value) != true)) {
-                    this.SiteXIdField = value;
-                    this.RaisePropertyChanged("SiteXId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> SiteYId {
-            get {
-                return this.SiteYIdField;
-            }
-            set {
-                if ((this.SiteYIdField.Equals(value) != true)) {
-                    this.SiteYIdField = value;
-                    this.RaisePropertyChanged("SiteYId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int VariableXId {
-            get {
-                return this.VariableXIdField;
-            }
-            set {
-                if ((this.VariableXIdField.Equals(value) != true)) {
-                    this.VariableXIdField = value;
-                    this.RaisePropertyChanged("VariableXId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int VariableYId {
-            get {
-                return this.VariableYIdField;
-            }
-            set {
-                if ((this.VariableYIdField.Equals(value) != true)) {
-                    this.VariableYIdField = value;
-                    this.RaisePropertyChanged("VariableYId");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CurveSerie", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class CurveSerie : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> BeginDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CurveIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DescriptionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<System.DateTime> EndDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.CurvePoint[] PointsField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private HydrologyConsole.Hydro.CurveValue[] ValuesField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<System.DateTime> BeginDate {
-            get {
-                return this.BeginDateField;
-            }
-            set {
-                if ((this.BeginDateField.Equals(value) != true)) {
-                    this.BeginDateField = value;
-                    this.RaisePropertyChanged("BeginDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CurveId {
-            get {
-                return this.CurveIdField;
-            }
-            set {
-                if ((this.CurveIdField.Equals(value) != true)) {
-                    this.CurveIdField = value;
-                    this.RaisePropertyChanged("CurveId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Description {
-            get {
-                return this.DescriptionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DescriptionField, value) != true)) {
-                    this.DescriptionField = value;
-                    this.RaisePropertyChanged("Description");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<System.DateTime> EndDate {
-            get {
-                return this.EndDateField;
-            }
-            set {
-                if ((this.EndDateField.Equals(value) != true)) {
-                    this.EndDateField = value;
-                    this.RaisePropertyChanged("EndDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.CurvePoint[] Points {
-            get {
-                return this.PointsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PointsField, value) != true)) {
-                    this.PointsField = value;
-                    this.RaisePropertyChanged("Points");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public HydrologyConsole.Hydro.CurveValue[] Values {
-            get {
-                return this.ValuesField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ValuesField, value) != true)) {
-                    this.ValuesField = value;
-                    this.RaisePropertyChanged("Values");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CurvePoint", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class CurvePoint : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int SerieIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private float XField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private float YField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int SerieId {
-            get {
-                return this.SerieIdField;
-            }
-            set {
-                if ((this.SerieIdField.Equals(value) != true)) {
-                    this.SerieIdField = value;
-                    this.RaisePropertyChanged("SerieId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public float X {
-            get {
-                return this.XField;
-            }
-            set {
-                if ((this.XField.Equals(value) != true)) {
-                    this.XField = value;
-                    this.RaisePropertyChanged("X");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public float Y {
-            get {
-                return this.YField;
-            }
-            set {
-                if ((this.YField.Equals(value) != true)) {
-                    this.YField = value;
-                    this.RaisePropertyChanged("Y");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CurveValue", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class CurveValue : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int DataValueIdXField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int DataValueIdYField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime DateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DescriptionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int SerieIdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private float ValueXField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private float ValueYField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int DataValueIdX {
-            get {
-                return this.DataValueIdXField;
-            }
-            set {
-                if ((this.DataValueIdXField.Equals(value) != true)) {
-                    this.DataValueIdXField = value;
-                    this.RaisePropertyChanged("DataValueIdX");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int DataValueIdY {
-            get {
-                return this.DataValueIdYField;
-            }
-            set {
-                if ((this.DataValueIdYField.Equals(value) != true)) {
-                    this.DataValueIdYField = value;
-                    this.RaisePropertyChanged("DataValueIdY");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Date {
-            get {
-                return this.DateField;
-            }
-            set {
-                if ((this.DateField.Equals(value) != true)) {
-                    this.DateField = value;
-                    this.RaisePropertyChanged("Date");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Description {
-            get {
-                return this.DescriptionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DescriptionField, value) != true)) {
-                    this.DescriptionField = value;
-                    this.RaisePropertyChanged("Description");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int SerieId {
-            get {
-                return this.SerieIdField;
-            }
-            set {
-                if ((this.SerieIdField.Equals(value) != true)) {
-                    this.SerieIdField = value;
-                    this.RaisePropertyChanged("SerieId");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public float ValueX {
-            get {
-                return this.ValueXField;
-            }
-            set {
-                if ((this.ValueXField.Equals(value) != true)) {
-                    this.ValueXField = value;
-                    this.RaisePropertyChanged("ValueX");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public float ValueY {
-            get {
-                return this.ValueYField;
-            }
-            set {
-                if ((this.ValueYField.Equals(value) != true)) {
-                    this.ValueYField = value;
-                    this.RaisePropertyChanged("ValueY");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Qualifier", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class Qualifier : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DescriptionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Code {
-            get {
-                return this.CodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CodeField, value) != true)) {
-                    this.CodeField = value;
-                    this.RaisePropertyChanged("Code");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Description {
-            get {
-                return this.DescriptionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DescriptionField, value) != true)) {
-                    this.DescriptionField = value;
-                    this.RaisePropertyChanged("Description");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id {
-            get {
-                return this.IdField;
-            }
-            set {
-                if ((this.IdField.Equals(value) != true)) {
-                    this.IdField = value;
-                    this.RaisePropertyChanged("Id");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Category", Namespace="http://schemas.datacontract.org/2004/07/")]
-    [System.SerializableAttribute()]
-    public partial class Category : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DescriptionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool IsOptionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int ValueField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int VariableIdField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Description {
-            get {
-                return this.DescriptionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DescriptionField, value) != true)) {
-                    this.DescriptionField = value;
-                    this.RaisePropertyChanged("Description");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool IsOption {
-            get {
-                return this.IsOptionField;
-            }
-            set {
-                if ((this.IsOptionField.Equals(value) != true)) {
-                    this.IsOptionField = value;
-                    this.RaisePropertyChanged("IsOption");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Value {
-            get {
-                return this.ValueField;
-            }
-            set {
-                if ((this.ValueField.Equals(value) != true)) {
-                    this.ValueField = value;
-                    this.RaisePropertyChanged("Value");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int VariableId {
-            get {
-                return this.VariableIdField;
-            }
-            set {
-                if ((this.VariableIdField.Equals(value) != true)) {
-                    this.VariableIdField = value;
-                    this.RaisePropertyChanged("VariableId");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
+    public class SiteAttributeCollection : System.Collections.Generic.List<HydrologyCore.Hydro.SiteAttribute> {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -3415,74 +66,74 @@ namespace HydrologyConsole.Hydro {
         System.Threading.Tasks.Task<string> HelloAsync(string name);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/SetData", ReplyAction="http://tempuri.org/IHydroService/SetDataResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/SetDataInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/SetDataInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        void SetData(HydrologyConsole.Hydro.Site site, HydrologyConsole.Hydro.DataValueCollection dataValueColl, HydrologyConsole.Hydro.DataSource dataSource);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/SetDataInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/SetDataInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        void SetData(HydrologyCore.Hydro.Site site, HydrologyConsole.Hydro.DataValueCollection dataValueColl, HydrologyCore.Hydro.DataSource dataSource);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/SetData", ReplyAction="http://tempuri.org/IHydroService/SetDataResponse")]
-        System.Threading.Tasks.Task SetDataAsync(HydrologyConsole.Hydro.Site site, HydrologyConsole.Hydro.DataValueCollection dataValueColl, HydrologyConsole.Hydro.DataSource dataSource);
+        System.Threading.Tasks.Task SetDataAsync(HydrologyCore.Hydro.Site site, HydrologyConsole.Hydro.DataValueCollection dataValueColl, HydrologyCore.Hydro.DataSource dataSource);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetDataValue", ReplyAction="http://tempuri.org/IHydroService/GetDataValueResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetDataValueInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetDataValueInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.DataValue GetDataValue(int siteId, System.DateTime utcDate, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetDataValueInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetDataValueInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.DataValue GetDataValue(int siteId, System.DateTime utcDate, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetDataValue", ReplyAction="http://tempuri.org/IHydroService/GetDataValueResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.DataValue> GetDataValueAsync(int siteId, System.DateTime utcDate, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.DataValue> GetDataValueAsync(int siteId, System.DateTime utcDate, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetDataValues", ReplyAction="http://tempuri.org/IHydroService/GetDataValuesResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetDataValuesInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetDataValuesInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetDataValuesInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetDataValuesInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
         HydrologyConsole.Hydro.DataValueCollection GetDataValues(int siteId, System.DateTime utcBeginDate, System.DateTime utcEndDate, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue, System.Nullable<int> stepInHours);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetDataValues", ReplyAction="http://tempuri.org/IHydroService/GetDataValuesResponse")]
         System.Threading.Tasks.Task<HydrologyConsole.Hydro.DataValueCollection> GetDataValuesAsync(int siteId, System.DateTime utcBeginDate, System.DateTime utcEndDate, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue, System.Nullable<int> stepInHours);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetDataValuesForReport", ReplyAction="http://tempuri.org/IHydroService/GetDataValuesForReportResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetDataValuesForReportInnerServiceExceptionFault" +
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetDataValuesForReportInnerServiceExceptionFault" +
             "", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetDataValuesForReportInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetDataValuesForReportInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
         HydrologyConsole.Hydro.DataValueCollection GetDataValuesForReport(int siteId, System.DateTime utcBeginDate, System.DateTime utcEndDate, System.Nullable<int> variableId, int srokUTC, System.Nullable<int> reportId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetDataValuesForReport", ReplyAction="http://tempuri.org/IHydroService/GetDataValuesForReportResponse")]
         System.Threading.Tasks.Task<HydrologyConsole.Hydro.DataValueCollection> GetDataValuesForReportAsync(int siteId, System.DateTime utcBeginDate, System.DateTime utcEndDate, System.Nullable<int> variableId, int srokUTC, System.Nullable<int> reportId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetAllDataValue", ReplyAction="http://tempuri.org/IHydroService/GetAllDataValueResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetAllDataValueInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetAllDataValueInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetAllDataValueInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetAllDataValueInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
         HydrologyConsole.Hydro.DataValueCollection GetAllDataValue(int siteId, System.DateTime utcDate, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetAllDataValue", ReplyAction="http://tempuri.org/IHydroService/GetAllDataValueResponse")]
         System.Threading.Tasks.Task<HydrologyConsole.Hydro.DataValueCollection> GetAllDataValueAsync(int siteId, System.DateTime utcDate, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetAllDataValueLocal", ReplyAction="http://tempuri.org/IHydroService/GetAllDataValueLocalResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetAllDataValueLocalInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetAllDataValueLocalInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetAllDataValueLocalInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetAllDataValueLocalInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
         HydrologyConsole.Hydro.DataValueCollection GetAllDataValueLocal(int siteId, System.DateTime date, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetAllDataValueLocal", ReplyAction="http://tempuri.org/IHydroService/GetAllDataValueLocalResponse")]
         System.Threading.Tasks.Task<HydrologyConsole.Hydro.DataValueCollection> GetAllDataValueLocalAsync(int siteId, System.DateTime date, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetDataValueLocal", ReplyAction="http://tempuri.org/IHydroService/GetDataValueLocalResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetDataValueLocalInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetDataValueLocalInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.DataValue GetDataValueLocal(int siteId, System.DateTime date, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetDataValueLocalInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetDataValueLocalInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.DataValue GetDataValueLocal(int siteId, System.DateTime date, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetDataValueLocal", ReplyAction="http://tempuri.org/IHydroService/GetDataValueLocalResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.DataValue> GetDataValueLocalAsync(int siteId, System.DateTime date, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.DataValue> GetDataValueLocalAsync(int siteId, System.DateTime date, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetDataValuesLocal", ReplyAction="http://tempuri.org/IHydroService/GetDataValuesLocalResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetDataValuesLocalInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetDataValuesLocalInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetDataValuesLocalInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetDataValuesLocalInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
         HydrologyConsole.Hydro.DataValueCollection GetDataValuesLocal(int siteId, System.DateTime beginDate, System.DateTime endDate, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue, System.Nullable<int> stepInHours);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetDataValuesLocal", ReplyAction="http://tempuri.org/IHydroService/GetDataValuesLocalResponse")]
         System.Threading.Tasks.Task<HydrologyConsole.Hydro.DataValueCollection> GetDataValuesLocalAsync(int siteId, System.DateTime beginDate, System.DateTime endDate, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue, System.Nullable<int> stepInHours);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetDataValuesForReportLocal", ReplyAction="http://tempuri.org/IHydroService/GetDataValuesForReportLocalResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetDataValuesForReportLocalInputDataExceptionFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetDataValuesForReportLocalInputDataExceptionFau" +
             "lt", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetDataValuesForReportLocalInnerServiceException" +
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetDataValuesForReportLocalInnerServiceException" +
             "Fault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
         HydrologyConsole.Hydro.DataValueCollection GetDataValuesForReportLocal(int siteId, System.DateTime beginDate, System.DateTime endDate, System.Nullable<int> variableId, int srokUTC, System.Nullable<int> reportId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue);
         
@@ -3490,246 +141,246 @@ namespace HydrologyConsole.Hydro {
         System.Threading.Tasks.Task<HydrologyConsole.Hydro.DataValueCollection> GetDataValuesForReportLocalAsync(int siteId, System.DateTime beginDate, System.DateTime endDate, System.Nullable<int> variableId, int srokUTC, System.Nullable<int> reportId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetWaterObjects", ReplyAction="http://tempuri.org/IHydroService/GetWaterObjectsResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetWaterObjectsInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetWaterObjectsInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
         HydrologyConsole.Hydro.WaterObjectCollection GetWaterObjects(bool withTree);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetWaterObjects", ReplyAction="http://tempuri.org/IHydroService/GetWaterObjectsResponse")]
         System.Threading.Tasks.Task<HydrologyConsole.Hydro.WaterObjectCollection> GetWaterObjectsAsync(bool withTree);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSitesWithoutWaterObject", ReplyAction="http://tempuri.org/IHydroService/GetSitesWithoutWaterObjectResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSitesWithoutWaterObjectInnerServiceExceptionF" +
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSitesWithoutWaterObjectInnerServiceExceptionF" +
             "ault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.Site[] GetSitesWithoutWaterObject();
+        HydrologyCore.Hydro.Site[] GetSitesWithoutWaterObject();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSitesWithoutWaterObject", ReplyAction="http://tempuri.org/IHydroService/GetSitesWithoutWaterObjectResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.Site[]> GetSitesWithoutWaterObjectAsync();
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.Site[]> GetSitesWithoutWaterObjectAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetWaterObjectBySite", ReplyAction="http://tempuri.org/IHydroService/GetWaterObjectBySiteResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetWaterObjectBySiteInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetWaterObjectBySiteInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetWaterObjectBySiteInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetWaterObjectBySiteInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
         HydrologyConsole.Hydro.WaterObjectCollection GetWaterObjectBySite(int siteId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetWaterObjectBySite", ReplyAction="http://tempuri.org/IHydroService/GetWaterObjectBySiteResponse")]
         System.Threading.Tasks.Task<HydrologyConsole.Hydro.WaterObjectCollection> GetWaterObjectBySiteAsync(int siteId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/SaveWaterObject", ReplyAction="http://tempuri.org/IHydroService/SaveWaterObjectResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/SaveWaterObjectInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/SaveWaterObjectInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        void SaveWaterObject(HydrologyConsole.Hydro.WaterObject waterObject);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/SaveWaterObjectInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/SaveWaterObjectInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        void SaveWaterObject(HydrologyCore.Hydro.WaterObject waterObject);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/SaveWaterObject", ReplyAction="http://tempuri.org/IHydroService/SaveWaterObjectResponse")]
-        System.Threading.Tasks.Task SaveWaterObjectAsync(HydrologyConsole.Hydro.WaterObject waterObject);
+        System.Threading.Tasks.Task SaveWaterObjectAsync(HydrologyCore.Hydro.WaterObject waterObject);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/SaveWaterObjectOrder", ReplyAction="http://tempuri.org/IHydroService/SaveWaterObjectOrderResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/SaveWaterObjectOrderInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/SaveWaterObjectOrderInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/SaveWaterObjectOrderInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/SaveWaterObjectOrderInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
         void SaveWaterObjectOrder(HydrologyConsole.Hydro.WaterObjectCollection coll);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/SaveWaterObjectOrder", ReplyAction="http://tempuri.org/IHydroService/SaveWaterObjectOrderResponse")]
         System.Threading.Tasks.Task SaveWaterObjectOrderAsync(HydrologyConsole.Hydro.WaterObjectCollection coll);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetAllGeoTypes", ReplyAction="http://tempuri.org/IHydroService/GetAllGeoTypesResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetAllGeoTypesInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.GeoType[] GetAllGeoTypes();
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetAllGeoTypesInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.GeoType[] GetAllGeoTypes();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetAllGeoTypes", ReplyAction="http://tempuri.org/IHydroService/GetAllGeoTypesResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.GeoType[]> GetAllGeoTypesAsync();
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.GeoType[]> GetAllGeoTypesAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetGeoType", ReplyAction="http://tempuri.org/IHydroService/GetGeoTypeResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetGeoTypeInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetGeoTypeInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.GeoType GetGeoType(int id);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetGeoTypeInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetGeoTypeInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.GeoType GetGeoType(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetGeoType", ReplyAction="http://tempuri.org/IHydroService/GetGeoTypeResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.GeoType> GetGeoTypeAsync(int id);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.GeoType> GetGeoTypeAsync(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetLastClimateInfo", ReplyAction="http://tempuri.org/IHydroService/GetLastClimateInfoResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetLastClimateInfoInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetLastClimateInfoInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.ClimateInfo GetLastClimateInfo(int siteId, int climateInfoTypeId, int variableId);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetLastClimateInfoInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetLastClimateInfoInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.ClimateInfo GetLastClimateInfo(int siteId, int climateInfoTypeId, int variableId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetLastClimateInfo", ReplyAction="http://tempuri.org/IHydroService/GetLastClimateInfoResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.ClimateInfo> GetLastClimateInfoAsync(int siteId, int climateInfoTypeId, int variableId);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.ClimateInfo> GetLastClimateInfoAsync(int siteId, int climateInfoTypeId, int variableId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetLastSiteCriteria", ReplyAction="http://tempuri.org/IHydroService/GetLastSiteCriteriaResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetLastSiteCriteriaInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetLastSiteCriteriaInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.Criteria[] GetLastSiteCriteria(int siteId, int variableId, System.Nullable<int> criteriaTypeId);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetLastSiteCriteriaInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetLastSiteCriteriaInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.Criteria[] GetLastSiteCriteria(int siteId, int variableId, System.Nullable<int> criteriaTypeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetLastSiteCriteria", ReplyAction="http://tempuri.org/IHydroService/GetLastSiteCriteriaResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.Criteria[]> GetLastSiteCriteriaAsync(int siteId, int variableId, System.Nullable<int> criteriaTypeId);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.Criteria[]> GetLastSiteCriteriaAsync(int siteId, int variableId, System.Nullable<int> criteriaTypeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSiteCriterias", ReplyAction="http://tempuri.org/IHydroService/GetSiteCriteriasResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSiteCriteriasInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSiteCriteriasInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.Criteria[] GetSiteCriterias(int siteId);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSiteCriteriasInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSiteCriteriasInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.Criteria[] GetSiteCriterias(int siteId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSiteCriterias", ReplyAction="http://tempuri.org/IHydroService/GetSiteCriteriasResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.Criteria[]> GetSiteCriteriasAsync(int siteId);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.Criteria[]> GetSiteCriteriasAsync(int siteId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/SaveCriteria", ReplyAction="http://tempuri.org/IHydroService/SaveCriteriaResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/SaveCriteriaInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/SaveCriteriaInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.Criteria SaveCriteria(HydrologyConsole.Hydro.Criteria criteria);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/SaveCriteriaInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/SaveCriteriaInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.Criteria SaveCriteria(HydrologyCore.Hydro.Criteria criteria);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/SaveCriteria", ReplyAction="http://tempuri.org/IHydroService/SaveCriteriaResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.Criteria> SaveCriteriaAsync(HydrologyConsole.Hydro.Criteria criteria);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.Criteria> SaveCriteriaAsync(HydrologyCore.Hydro.Criteria criteria);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetCriteriaTypes", ReplyAction="http://tempuri.org/IHydroService/GetCriteriaTypesResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetCriteriaTypesInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.CriteriaType[] GetCriteriaTypes();
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetCriteriaTypesInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.CriteriaType[] GetCriteriaTypes();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetCriteriaTypes", ReplyAction="http://tempuri.org/IHydroService/GetCriteriaTypesResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.CriteriaType[]> GetCriteriaTypesAsync();
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.CriteriaType[]> GetCriteriaTypesAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSitesByWaterObject", ReplyAction="http://tempuri.org/IHydroService/GetSitesByWaterObjectResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSitesByWaterObjectInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSitesByWaterObjectInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.Site[] GetSitesByWaterObject(int waterObjectId);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSitesByWaterObjectInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSitesByWaterObjectInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.Site[] GetSitesByWaterObject(int waterObjectId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSitesByWaterObject", ReplyAction="http://tempuri.org/IHydroService/GetSitesByWaterObjectResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.Site[]> GetSitesByWaterObjectAsync(int waterObjectId);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.Site[]> GetSitesByWaterObjectAsync(int waterObjectId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSiteList", ReplyAction="http://tempuri.org/IHydroService/GetSiteListResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSiteListInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.Site[] GetSiteList(System.Nullable<int> siteTypeId);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSiteListInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.Site[] GetSiteList(System.Nullable<int> siteTypeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSiteList", ReplyAction="http://tempuri.org/IHydroService/GetSiteListResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.Site[]> GetSiteListAsync(System.Nullable<int> siteTypeId);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.Site[]> GetSiteListAsync(System.Nullable<int> siteTypeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSite", ReplyAction="http://tempuri.org/IHydroService/GetSiteResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSiteInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSiteInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.Site GetSite(string siteCode, int typeId);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSiteInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSiteInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.Site GetSite(string siteCode, int typeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSite", ReplyAction="http://tempuri.org/IHydroService/GetSiteResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.Site> GetSiteAsync(string siteCode, int typeId);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.Site> GetSiteAsync(string siteCode, int typeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/SaveSiteWithRelation", ReplyAction="http://tempuri.org/IHydroService/SaveSiteWithRelationResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/SaveSiteWithRelationInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/SaveSiteWithRelationInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.Site SaveSiteWithRelation(HydrologyConsole.Hydro.Site site, HydrologyConsole.Hydro.WaterObject wo);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/SaveSiteWithRelationInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/SaveSiteWithRelationInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.Site SaveSiteWithRelation(HydrologyCore.Hydro.Site site, HydrologyCore.Hydro.WaterObject wo);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/SaveSiteWithRelation", ReplyAction="http://tempuri.org/IHydroService/SaveSiteWithRelationResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.Site> SaveSiteWithRelationAsync(HydrologyConsole.Hydro.Site site, HydrologyConsole.Hydro.WaterObject wo);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.Site> SaveSiteWithRelationAsync(HydrologyCore.Hydro.Site site, HydrologyCore.Hydro.WaterObject wo);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSiteListWithParent", ReplyAction="http://tempuri.org/IHydroService/GetSiteListWithParentResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSiteListWithParentInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSiteListWithParentInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.Site[] GetSiteListWithParent(int siteTypeId);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSiteListWithParentInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSiteListWithParentInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.Site[] GetSiteListWithParent(int siteTypeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSiteListWithParent", ReplyAction="http://tempuri.org/IHydroService/GetSiteListWithParentResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.Site[]> GetSiteListWithParentAsync(int siteTypeId);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.Site[]> GetSiteListWithParentAsync(int siteTypeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSiteTypes", ReplyAction="http://tempuri.org/IHydroService/GetSiteTypesResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSiteTypesInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSiteTypesInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSiteTypesInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSiteTypesInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
         HydrologyConsole.Hydro.SiteTypeCollection GetSiteTypes();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSiteTypes", ReplyAction="http://tempuri.org/IHydroService/GetSiteTypesResponse")]
         System.Threading.Tasks.Task<HydrologyConsole.Hydro.SiteTypeCollection> GetSiteTypesAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetVariable", ReplyAction="http://tempuri.org/IHydroService/GetVariableResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetVariableInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetVariableInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.Variable GetVariable(int variableId);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetVariableInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetVariableInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.Variable GetVariable(int variableId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetVariable", ReplyAction="http://tempuri.org/IHydroService/GetVariableResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.Variable> GetVariableAsync(int variableId);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.Variable> GetVariableAsync(int variableId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSiteTypeVariables", ReplyAction="http://tempuri.org/IHydroService/GetSiteTypeVariablesResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSiteTypeVariablesInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSiteTypeVariablesInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSiteTypeVariablesInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSiteTypeVariablesInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
         HydrologyConsole.Hydro.VariableCollection GetSiteTypeVariables(int siteTypeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSiteTypeVariables", ReplyAction="http://tempuri.org/IHydroService/GetSiteTypeVariablesResponse")]
         System.Threading.Tasks.Task<HydrologyConsole.Hydro.VariableCollection> GetSiteTypeVariablesAsync(int siteTypeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetAllSiteGroups", ReplyAction="http://tempuri.org/IHydroService/GetAllSiteGroupsResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetAllSiteGroupsInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetAllSiteGroupsInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
         HydrologyConsole.Hydro.SiteGroupCollection GetAllSiteGroups();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetAllSiteGroups", ReplyAction="http://tempuri.org/IHydroService/GetAllSiteGroupsResponse")]
         System.Threading.Tasks.Task<HydrologyConsole.Hydro.SiteGroupCollection> GetAllSiteGroupsAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetAttributesForSite", ReplyAction="http://tempuri.org/IHydroService/GetAttributesForSiteResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetAttributesForSiteInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetAttributesForSiteInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetAttributesForSiteInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetAttributesForSiteInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
         HydrologyConsole.Hydro.SiteAttributeCollection GetAttributesForSite(int siteId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetAttributesForSite", ReplyAction="http://tempuri.org/IHydroService/GetAttributesForSiteResponse")]
         System.Threading.Tasks.Task<HydrologyConsole.Hydro.SiteAttributeCollection> GetAttributesForSiteAsync(int siteId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSiteAttributeTypes", ReplyAction="http://tempuri.org/IHydroService/GetSiteAttributeTypesResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSiteAttributeTypesInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSiteAttributeTypesInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.SiteAttributeType[] GetSiteAttributeTypes(int siteTypeId);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSiteAttributeTypesInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSiteAttributeTypesInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.SiteAttributeType[] GetSiteAttributeTypes(int siteTypeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSiteAttributeTypes", ReplyAction="http://tempuri.org/IHydroService/GetSiteAttributeTypesResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.SiteAttributeType[]> GetSiteAttributeTypesAsync(int siteTypeId);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.SiteAttributeType[]> GetSiteAttributeTypesAsync(int siteTypeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/SaveSiteAttribute", ReplyAction="http://tempuri.org/IHydroService/SaveSiteAttributeResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/SaveSiteAttributeInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/SaveSiteAttributeInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        void SaveSiteAttribute(HydrologyConsole.Hydro.SiteAttribute attr);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/SaveSiteAttributeInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/SaveSiteAttributeInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        void SaveSiteAttribute(HydrologyCore.Hydro.SiteAttribute attr);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/SaveSiteAttribute", ReplyAction="http://tempuri.org/IHydroService/SaveSiteAttributeResponse")]
-        System.Threading.Tasks.Task SaveSiteAttributeAsync(HydrologyConsole.Hydro.SiteAttribute attr);
+        System.Threading.Tasks.Task SaveSiteAttributeAsync(HydrologyCore.Hydro.SiteAttribute attr);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSiteAttribute", ReplyAction="http://tempuri.org/IHydroService/GetSiteAttributeResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSiteAttributeInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSiteAttributeInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.SiteAttribute GetSiteAttribute(int siteId, int siteAttrTypeId);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSiteAttributeInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSiteAttributeInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.SiteAttribute GetSiteAttribute(int siteId, int siteAttrTypeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSiteAttribute", ReplyAction="http://tempuri.org/IHydroService/GetSiteAttributeResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.SiteAttribute> GetSiteAttributeAsync(int siteId, int siteAttrTypeId);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.SiteAttribute> GetSiteAttributeAsync(int siteId, int siteAttrTypeId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSensorDifferences", ReplyAction="http://tempuri.org/IHydroService/GetSensorDifferencesResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSensorDifferencesInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSensorDifferencesInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.SensorDifference GetSensorDifferences(HydrologyConsole.Hydro.Site site1, HydrologyConsole.Hydro.Site site2, int variableId, System.DateTime utcBeginDate, System.DateTime utcEndDate, float delta);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetSensorDifferencesInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetSensorDifferencesInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.SensorDifference GetSensorDifferences(HydrologyCore.Hydro.Site site1, HydrologyCore.Hydro.Site site2, int variableId, System.DateTime utcBeginDate, System.DateTime utcEndDate, float delta);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetSensorDifferences", ReplyAction="http://tempuri.org/IHydroService/GetSensorDifferencesResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.SensorDifference> GetSensorDifferencesAsync(HydrologyConsole.Hydro.Site site1, HydrologyConsole.Hydro.Site site2, int variableId, System.DateTime utcBeginDate, System.DateTime utcEndDate, float delta);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.SensorDifference> GetSensorDifferencesAsync(HydrologyCore.Hydro.Site site1, HydrologyCore.Hydro.Site site2, int variableId, System.DateTime utcBeginDate, System.DateTime utcEndDate, float delta);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetDataValueFromId", ReplyAction="http://tempuri.org/IHydroService/GetDataValueFromIdResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetDataValueFromIdInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetDataValueFromIdInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetDataValueFromIdInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetDataValueFromIdInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
         HydrologyConsole.Hydro.DataValueCollection GetDataValueFromId(int siteId, int variableId, int dataValueId, bool isCalc);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetDataValueFromId", ReplyAction="http://tempuri.org/IHydroService/GetDataValueFromIdResponse")]
         System.Threading.Tasks.Task<HydrologyConsole.Hydro.DataValueCollection> GetDataValueFromIdAsync(int siteId, int variableId, int dataValueId, bool isCalc);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetDataSource", ReplyAction="http://tempuri.org/IHydroService/GetDataSourceResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetDataSourceInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetDataSourceInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.DataSource GetDataSource(int id);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetDataSourceInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetDataSourceInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.DataSource GetDataSource(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetDataSource", ReplyAction="http://tempuri.org/IHydroService/GetDataSourceResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.DataSource> GetDataSourceAsync(int id);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.DataSource> GetDataSourceAsync(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetCurve", ReplyAction="http://tempuri.org/IHydroService/GetCurveResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetCurveInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetCurveInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.Curve GetCurve(int siteId, int variableXId, int variableYId);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetCurveInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetCurveInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.Curve GetCurve(int siteId, int variableXId, int variableYId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetCurve", ReplyAction="http://tempuri.org/IHydroService/GetCurveResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.Curve> GetCurveAsync(int siteId, int variableXId, int variableYId);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.Curve> GetCurveAsync(int siteId, int variableXId, int variableYId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetQualifiers", ReplyAction="http://tempuri.org/IHydroService/GetQualifiersResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetQualifiersInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.Qualifier[] GetQualifiers();
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetQualifiersInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.Qualifier[] GetQualifiers();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetQualifiers", ReplyAction="http://tempuri.org/IHydroService/GetQualifiersResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.Qualifier[]> GetQualifiersAsync();
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.Qualifier[]> GetQualifiersAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetCategory", ReplyAction="http://tempuri.org/IHydroService/GetCategoryResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetCategoryInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyConsole.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetCategoryInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
-        HydrologyConsole.Hydro.Category[] GetCategory(int variableId, System.Nullable<int> datavalue);
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InputDataException), Action="http://tempuri.org/IHydroService/GetCategoryInputDataExceptionFault", Name="InputDataException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        [System.ServiceModel.FaultContractAttribute(typeof(HydrologyCore.Hydro.InnerServiceException), Action="http://tempuri.org/IHydroService/GetCategoryInnerServiceExceptionFault", Name="InnerServiceException", Namespace="http://schemas.datacontract.org/2004/07/")]
+        HydrologyCore.Hydro.Category[] GetCategory(int variableId, System.Nullable<int> datavalue);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetCategory", ReplyAction="http://tempuri.org/IHydroService/GetCategoryResponse")]
-        System.Threading.Tasks.Task<HydrologyConsole.Hydro.Category[]> GetCategoryAsync(int variableId, System.Nullable<int> datavalue);
+        System.Threading.Tasks.Task<HydrologyCore.Hydro.Category[]> GetCategoryAsync(int variableId, System.Nullable<int> datavalue);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHydroService/GetData", ReplyAction="http://tempuri.org/IHydroService/GetDataResponse")]
         HydrologyConsole.Hydro.DataValueCollection GetData(int siteId, int sourceTypeId, System.DateTime utcDate, int variableId, System.Nullable<int> duration);
@@ -3785,19 +436,19 @@ namespace HydrologyConsole.Hydro {
             return base.Channel.HelloAsync(name);
         }
         
-        public void SetData(HydrologyConsole.Hydro.Site site, HydrologyConsole.Hydro.DataValueCollection dataValueColl, HydrologyConsole.Hydro.DataSource dataSource) {
+        public void SetData(HydrologyCore.Hydro.Site site, HydrologyConsole.Hydro.DataValueCollection dataValueColl, HydrologyCore.Hydro.DataSource dataSource) {
             base.Channel.SetData(site, dataValueColl, dataSource);
         }
         
-        public System.Threading.Tasks.Task SetDataAsync(HydrologyConsole.Hydro.Site site, HydrologyConsole.Hydro.DataValueCollection dataValueColl, HydrologyConsole.Hydro.DataSource dataSource) {
+        public System.Threading.Tasks.Task SetDataAsync(HydrologyCore.Hydro.Site site, HydrologyConsole.Hydro.DataValueCollection dataValueColl, HydrologyCore.Hydro.DataSource dataSource) {
             return base.Channel.SetDataAsync(site, dataValueColl, dataSource);
         }
         
-        public HydrologyConsole.Hydro.DataValue GetDataValue(int siteId, System.DateTime utcDate, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue) {
+        public HydrologyCore.Hydro.DataValue GetDataValue(int siteId, System.DateTime utcDate, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue) {
             return base.Channel.GetDataValue(siteId, utcDate, variableId, offsetTypeId, offsetValue);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.DataValue> GetDataValueAsync(int siteId, System.DateTime utcDate, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.DataValue> GetDataValueAsync(int siteId, System.DateTime utcDate, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue) {
             return base.Channel.GetDataValueAsync(siteId, utcDate, variableId, offsetTypeId, offsetValue);
         }
         
@@ -3833,11 +484,11 @@ namespace HydrologyConsole.Hydro {
             return base.Channel.GetAllDataValueLocalAsync(siteId, date, variableId, offsetTypeId, offsetValue);
         }
         
-        public HydrologyConsole.Hydro.DataValue GetDataValueLocal(int siteId, System.DateTime date, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue) {
+        public HydrologyCore.Hydro.DataValue GetDataValueLocal(int siteId, System.DateTime date, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue) {
             return base.Channel.GetDataValueLocal(siteId, date, variableId, offsetTypeId, offsetValue);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.DataValue> GetDataValueLocalAsync(int siteId, System.DateTime date, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.DataValue> GetDataValueLocalAsync(int siteId, System.DateTime date, int variableId, System.Nullable<int> offsetTypeId, System.Nullable<float> offsetValue) {
             return base.Channel.GetDataValueLocalAsync(siteId, date, variableId, offsetTypeId, offsetValue);
         }
         
@@ -3865,11 +516,11 @@ namespace HydrologyConsole.Hydro {
             return base.Channel.GetWaterObjectsAsync(withTree);
         }
         
-        public HydrologyConsole.Hydro.Site[] GetSitesWithoutWaterObject() {
+        public HydrologyCore.Hydro.Site[] GetSitesWithoutWaterObject() {
             return base.Channel.GetSitesWithoutWaterObject();
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.Site[]> GetSitesWithoutWaterObjectAsync() {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.Site[]> GetSitesWithoutWaterObjectAsync() {
             return base.Channel.GetSitesWithoutWaterObjectAsync();
         }
         
@@ -3881,11 +532,11 @@ namespace HydrologyConsole.Hydro {
             return base.Channel.GetWaterObjectBySiteAsync(siteId);
         }
         
-        public void SaveWaterObject(HydrologyConsole.Hydro.WaterObject waterObject) {
+        public void SaveWaterObject(HydrologyCore.Hydro.WaterObject waterObject) {
             base.Channel.SaveWaterObject(waterObject);
         }
         
-        public System.Threading.Tasks.Task SaveWaterObjectAsync(HydrologyConsole.Hydro.WaterObject waterObject) {
+        public System.Threading.Tasks.Task SaveWaterObjectAsync(HydrologyCore.Hydro.WaterObject waterObject) {
             return base.Channel.SaveWaterObjectAsync(waterObject);
         }
         
@@ -3897,99 +548,99 @@ namespace HydrologyConsole.Hydro {
             return base.Channel.SaveWaterObjectOrderAsync(coll);
         }
         
-        public HydrologyConsole.Hydro.GeoType[] GetAllGeoTypes() {
+        public HydrologyCore.Hydro.GeoType[] GetAllGeoTypes() {
             return base.Channel.GetAllGeoTypes();
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.GeoType[]> GetAllGeoTypesAsync() {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.GeoType[]> GetAllGeoTypesAsync() {
             return base.Channel.GetAllGeoTypesAsync();
         }
         
-        public HydrologyConsole.Hydro.GeoType GetGeoType(int id) {
+        public HydrologyCore.Hydro.GeoType GetGeoType(int id) {
             return base.Channel.GetGeoType(id);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.GeoType> GetGeoTypeAsync(int id) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.GeoType> GetGeoTypeAsync(int id) {
             return base.Channel.GetGeoTypeAsync(id);
         }
         
-        public HydrologyConsole.Hydro.ClimateInfo GetLastClimateInfo(int siteId, int climateInfoTypeId, int variableId) {
+        public HydrologyCore.Hydro.ClimateInfo GetLastClimateInfo(int siteId, int climateInfoTypeId, int variableId) {
             return base.Channel.GetLastClimateInfo(siteId, climateInfoTypeId, variableId);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.ClimateInfo> GetLastClimateInfoAsync(int siteId, int climateInfoTypeId, int variableId) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.ClimateInfo> GetLastClimateInfoAsync(int siteId, int climateInfoTypeId, int variableId) {
             return base.Channel.GetLastClimateInfoAsync(siteId, climateInfoTypeId, variableId);
         }
         
-        public HydrologyConsole.Hydro.Criteria[] GetLastSiteCriteria(int siteId, int variableId, System.Nullable<int> criteriaTypeId) {
+        public HydrologyCore.Hydro.Criteria[] GetLastSiteCriteria(int siteId, int variableId, System.Nullable<int> criteriaTypeId) {
             return base.Channel.GetLastSiteCriteria(siteId, variableId, criteriaTypeId);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.Criteria[]> GetLastSiteCriteriaAsync(int siteId, int variableId, System.Nullable<int> criteriaTypeId) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.Criteria[]> GetLastSiteCriteriaAsync(int siteId, int variableId, System.Nullable<int> criteriaTypeId) {
             return base.Channel.GetLastSiteCriteriaAsync(siteId, variableId, criteriaTypeId);
         }
         
-        public HydrologyConsole.Hydro.Criteria[] GetSiteCriterias(int siteId) {
+        public HydrologyCore.Hydro.Criteria[] GetSiteCriterias(int siteId) {
             return base.Channel.GetSiteCriterias(siteId);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.Criteria[]> GetSiteCriteriasAsync(int siteId) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.Criteria[]> GetSiteCriteriasAsync(int siteId) {
             return base.Channel.GetSiteCriteriasAsync(siteId);
         }
         
-        public HydrologyConsole.Hydro.Criteria SaveCriteria(HydrologyConsole.Hydro.Criteria criteria) {
+        public HydrologyCore.Hydro.Criteria SaveCriteria(HydrologyCore.Hydro.Criteria criteria) {
             return base.Channel.SaveCriteria(criteria);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.Criteria> SaveCriteriaAsync(HydrologyConsole.Hydro.Criteria criteria) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.Criteria> SaveCriteriaAsync(HydrologyCore.Hydro.Criteria criteria) {
             return base.Channel.SaveCriteriaAsync(criteria);
         }
         
-        public HydrologyConsole.Hydro.CriteriaType[] GetCriteriaTypes() {
+        public HydrologyCore.Hydro.CriteriaType[] GetCriteriaTypes() {
             return base.Channel.GetCriteriaTypes();
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.CriteriaType[]> GetCriteriaTypesAsync() {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.CriteriaType[]> GetCriteriaTypesAsync() {
             return base.Channel.GetCriteriaTypesAsync();
         }
         
-        public HydrologyConsole.Hydro.Site[] GetSitesByWaterObject(int waterObjectId) {
+        public HydrologyCore.Hydro.Site[] GetSitesByWaterObject(int waterObjectId) {
             return base.Channel.GetSitesByWaterObject(waterObjectId);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.Site[]> GetSitesByWaterObjectAsync(int waterObjectId) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.Site[]> GetSitesByWaterObjectAsync(int waterObjectId) {
             return base.Channel.GetSitesByWaterObjectAsync(waterObjectId);
         }
         
-        public HydrologyConsole.Hydro.Site[] GetSiteList(System.Nullable<int> siteTypeId) {
+        public HydrologyCore.Hydro.Site[] GetSiteList(System.Nullable<int> siteTypeId) {
             return base.Channel.GetSiteList(siteTypeId);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.Site[]> GetSiteListAsync(System.Nullable<int> siteTypeId) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.Site[]> GetSiteListAsync(System.Nullable<int> siteTypeId) {
             return base.Channel.GetSiteListAsync(siteTypeId);
         }
         
-        public HydrologyConsole.Hydro.Site GetSite(string siteCode, int typeId) {
+        public HydrologyCore.Hydro.Site GetSite(string siteCode, int typeId) {
             return base.Channel.GetSite(siteCode, typeId);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.Site> GetSiteAsync(string siteCode, int typeId) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.Site> GetSiteAsync(string siteCode, int typeId) {
             return base.Channel.GetSiteAsync(siteCode, typeId);
         }
         
-        public HydrologyConsole.Hydro.Site SaveSiteWithRelation(HydrologyConsole.Hydro.Site site, HydrologyConsole.Hydro.WaterObject wo) {
+        public HydrologyCore.Hydro.Site SaveSiteWithRelation(HydrologyCore.Hydro.Site site, HydrologyCore.Hydro.WaterObject wo) {
             return base.Channel.SaveSiteWithRelation(site, wo);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.Site> SaveSiteWithRelationAsync(HydrologyConsole.Hydro.Site site, HydrologyConsole.Hydro.WaterObject wo) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.Site> SaveSiteWithRelationAsync(HydrologyCore.Hydro.Site site, HydrologyCore.Hydro.WaterObject wo) {
             return base.Channel.SaveSiteWithRelationAsync(site, wo);
         }
         
-        public HydrologyConsole.Hydro.Site[] GetSiteListWithParent(int siteTypeId) {
+        public HydrologyCore.Hydro.Site[] GetSiteListWithParent(int siteTypeId) {
             return base.Channel.GetSiteListWithParent(siteTypeId);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.Site[]> GetSiteListWithParentAsync(int siteTypeId) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.Site[]> GetSiteListWithParentAsync(int siteTypeId) {
             return base.Channel.GetSiteListWithParentAsync(siteTypeId);
         }
         
@@ -4001,11 +652,11 @@ namespace HydrologyConsole.Hydro {
             return base.Channel.GetSiteTypesAsync();
         }
         
-        public HydrologyConsole.Hydro.Variable GetVariable(int variableId) {
+        public HydrologyCore.Hydro.Variable GetVariable(int variableId) {
             return base.Channel.GetVariable(variableId);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.Variable> GetVariableAsync(int variableId) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.Variable> GetVariableAsync(int variableId) {
             return base.Channel.GetVariableAsync(variableId);
         }
         
@@ -4033,35 +684,35 @@ namespace HydrologyConsole.Hydro {
             return base.Channel.GetAttributesForSiteAsync(siteId);
         }
         
-        public HydrologyConsole.Hydro.SiteAttributeType[] GetSiteAttributeTypes(int siteTypeId) {
+        public HydrologyCore.Hydro.SiteAttributeType[] GetSiteAttributeTypes(int siteTypeId) {
             return base.Channel.GetSiteAttributeTypes(siteTypeId);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.SiteAttributeType[]> GetSiteAttributeTypesAsync(int siteTypeId) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.SiteAttributeType[]> GetSiteAttributeTypesAsync(int siteTypeId) {
             return base.Channel.GetSiteAttributeTypesAsync(siteTypeId);
         }
         
-        public void SaveSiteAttribute(HydrologyConsole.Hydro.SiteAttribute attr) {
+        public void SaveSiteAttribute(HydrologyCore.Hydro.SiteAttribute attr) {
             base.Channel.SaveSiteAttribute(attr);
         }
         
-        public System.Threading.Tasks.Task SaveSiteAttributeAsync(HydrologyConsole.Hydro.SiteAttribute attr) {
+        public System.Threading.Tasks.Task SaveSiteAttributeAsync(HydrologyCore.Hydro.SiteAttribute attr) {
             return base.Channel.SaveSiteAttributeAsync(attr);
         }
         
-        public HydrologyConsole.Hydro.SiteAttribute GetSiteAttribute(int siteId, int siteAttrTypeId) {
+        public HydrologyCore.Hydro.SiteAttribute GetSiteAttribute(int siteId, int siteAttrTypeId) {
             return base.Channel.GetSiteAttribute(siteId, siteAttrTypeId);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.SiteAttribute> GetSiteAttributeAsync(int siteId, int siteAttrTypeId) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.SiteAttribute> GetSiteAttributeAsync(int siteId, int siteAttrTypeId) {
             return base.Channel.GetSiteAttributeAsync(siteId, siteAttrTypeId);
         }
         
-        public HydrologyConsole.Hydro.SensorDifference GetSensorDifferences(HydrologyConsole.Hydro.Site site1, HydrologyConsole.Hydro.Site site2, int variableId, System.DateTime utcBeginDate, System.DateTime utcEndDate, float delta) {
+        public HydrologyCore.Hydro.SensorDifference GetSensorDifferences(HydrologyCore.Hydro.Site site1, HydrologyCore.Hydro.Site site2, int variableId, System.DateTime utcBeginDate, System.DateTime utcEndDate, float delta) {
             return base.Channel.GetSensorDifferences(site1, site2, variableId, utcBeginDate, utcEndDate, delta);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.SensorDifference> GetSensorDifferencesAsync(HydrologyConsole.Hydro.Site site1, HydrologyConsole.Hydro.Site site2, int variableId, System.DateTime utcBeginDate, System.DateTime utcEndDate, float delta) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.SensorDifference> GetSensorDifferencesAsync(HydrologyCore.Hydro.Site site1, HydrologyCore.Hydro.Site site2, int variableId, System.DateTime utcBeginDate, System.DateTime utcEndDate, float delta) {
             return base.Channel.GetSensorDifferencesAsync(site1, site2, variableId, utcBeginDate, utcEndDate, delta);
         }
         
@@ -4073,35 +724,35 @@ namespace HydrologyConsole.Hydro {
             return base.Channel.GetDataValueFromIdAsync(siteId, variableId, dataValueId, isCalc);
         }
         
-        public HydrologyConsole.Hydro.DataSource GetDataSource(int id) {
+        public HydrologyCore.Hydro.DataSource GetDataSource(int id) {
             return base.Channel.GetDataSource(id);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.DataSource> GetDataSourceAsync(int id) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.DataSource> GetDataSourceAsync(int id) {
             return base.Channel.GetDataSourceAsync(id);
         }
         
-        public HydrologyConsole.Hydro.Curve GetCurve(int siteId, int variableXId, int variableYId) {
+        public HydrologyCore.Hydro.Curve GetCurve(int siteId, int variableXId, int variableYId) {
             return base.Channel.GetCurve(siteId, variableXId, variableYId);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.Curve> GetCurveAsync(int siteId, int variableXId, int variableYId) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.Curve> GetCurveAsync(int siteId, int variableXId, int variableYId) {
             return base.Channel.GetCurveAsync(siteId, variableXId, variableYId);
         }
         
-        public HydrologyConsole.Hydro.Qualifier[] GetQualifiers() {
+        public HydrologyCore.Hydro.Qualifier[] GetQualifiers() {
             return base.Channel.GetQualifiers();
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.Qualifier[]> GetQualifiersAsync() {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.Qualifier[]> GetQualifiersAsync() {
             return base.Channel.GetQualifiersAsync();
         }
         
-        public HydrologyConsole.Hydro.Category[] GetCategory(int variableId, System.Nullable<int> datavalue) {
+        public HydrologyCore.Hydro.Category[] GetCategory(int variableId, System.Nullable<int> datavalue) {
             return base.Channel.GetCategory(variableId, datavalue);
         }
         
-        public System.Threading.Tasks.Task<HydrologyConsole.Hydro.Category[]> GetCategoryAsync(int variableId, System.Nullable<int> datavalue) {
+        public System.Threading.Tasks.Task<HydrologyCore.Hydro.Category[]> GetCategoryAsync(int variableId, System.Nullable<int> datavalue) {
             return base.Channel.GetCategoryAsync(variableId, datavalue);
         }
         
