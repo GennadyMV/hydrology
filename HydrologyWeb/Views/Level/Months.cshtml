@@ -1,0 +1,172 @@
+﻿@model HydrologyWeb.Models.ViewLevel
+@{
+    ViewBag.Title = "Сравнение АГК с ГП";
+}
+
+
+@section Scripts
+{
+    @Scripts.Render("~/bundles/selectpicker")
+    @Scripts.Render("~/Scripts/highcharts.js")
+}
+
+@section Styles
+{
+    @Styles.Render("~/Content/selectpicker")
+}
+
+@if (Model == null)
+{
+    <p>
+        Данных нет
+    </p>
+}
+else
+
+if(Model.theLevelList == null)
+{
+    <p>
+        Данных нет
+    </p>
+}
+else
+{
+    
+    <div id="container" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+
+<script>
+    $(document).ready(function () {
+
+    Highcharts.setOptions({
+    global: {
+        useUTC: false
+    },
+    lang: {
+        loading: 'Загрузка...',
+        months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+        weekdays: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
+        shortMonths: ['Янв', 'Фев', 'Март', 'Апр', 'Май', 'Июнь', 'Июль', 'Авг', 'Сент', 'Окт', 'Нояб', 'Дек'],
+        exportButtonTitle: "Экспорт",
+        printButtonTitle: "Печать",
+        rangeSelectorFrom: "С",
+        rangeSelectorTo: "По",
+        rangeSelectorZoom: "Период",
+        downloadPNG: 'Скачать PNG',
+        downloadJPEG: 'Скачать JPEG',
+        downloadPDF: 'Скачать PDF',
+        downloadSVG: 'Скачать SVG',
+        printChart: 'Напечатать график'
+    }
+});
+
+
+$('#container').highcharts({
+    chart: {
+        type: 'spline'
+    },
+    title: {
+        text: 'Уровень воды на посту @Model.SelectedSiteCode.ToString("00000") за @ViewBag.currDate.ToString("MMMM yyyy")'
+    },
+    tooltip: {
+        formatter: function () {
+            return Highcharts.dateFormat('%d.%m.%Y', new Date(this.x)) + '<br/>' + 'Ap: ' + this.y;
+        }
+    },
+    xAxis: {
+        type: "datetime",
+        tickInterval: 24 * 3600 * 1000,
+        labels: {
+            align: 'center'
+        },
+        dateTimeLabelFormats: { // don't display the dummy year
+            day: '%e',
+        }
+    },
+    yAxis: {
+        title: {
+            text: 'День месяца'
+        },
+        allowDecimals: false
+    },
+    legend: {
+        enabled: true
+    },
+    series: [{
+        name: 'Автоматический гидрологический пост',
+        data: [
+            @foreach (var item in @Model.theLevelList )
+            {
+                DateTime dateAK = new DateTime(item.YYYY, item.MM, item.DD, item.HH, item.MI, item.SS);
+                long ticks = (long)dateAK.Subtract(new DateTime(1970, 1, 1)).TotalMilliseconds;
+                                    <text>
+                        [@ticks.ToString(), @item.Value.ToString().Replace(",",".")],
+                    </text>
+                    
+                
+            }
+        ]
+    },
+    {
+        name: 'Гидрологический пост (наблюдатель)',
+        data: [
+            @foreach (var item in @Model.theHydroPostLevelList )
+        {
+                DateTime dateAK = new DateTime(item.YYYY, item.MM, item.DD, item.HH, item.MI, item.SS);
+        long ticks = (long)dateAK.Subtract(new DateTime(1970, 1, 1)).TotalMilliseconds;
+        <text>
+[@ticks.ToString(), @item.Value.ToString().Replace(",",".")],
+</text>
+                    
+                
+    }
+]
+}],
+    plotOptions: {
+        series: {
+            pointRange: 24 * 3600 * 1000 // one day
+        }
+    }
+});
+
+
+    })
+
+</script>
+
+
+
+    
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                Дата
+            </th>
+            <th>
+                Уровень
+            </th>
+            <th>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+                @foreach (var item in Model.theLevelList)
+        {
+            <tr>
+                <td>
+                    @item._Date.ToLongDateString() - @item._Date.ToLongTimeString()
+                </td>
+                <td>
+                    @item.Value
+                </td>
+                <td>
+                    Удалить
+                </td>
+            </tr>
+            
+        }
+    </tbody>
+</table>
+    
+}

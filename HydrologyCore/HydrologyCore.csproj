@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Agk\ExportFromHydroService.cs" />
     <Compile Include="Agk\IExport.cs" />
+    <Compile Include="Helper.cs" />
     <Compile Include="Logger\ILogger.cs" />
     <Compile Include="Logger\LoggerConsole.cs" />
     <Compile Include="Logger\LoggerNLog.cs" />

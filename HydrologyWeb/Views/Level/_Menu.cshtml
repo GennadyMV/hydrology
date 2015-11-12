@@ -1,0 +1,61 @@
+﻿@using HydrologyWeb.Models
+@model HydrologyWeb.Models.ViewLevel
+<li>
+    <form class="navbar-form pull-left">
+        <select class="selectpicker">
+            @foreach(var item in Model.theSiteList)
+            {
+                if (Model.SelectedSiteCode == item.Code)
+                {
+                    <option value="@item.Code" selected>@Convert.ToInt32(@item.Code).ToString("00000") - @item.Name</option>
+                }
+                else
+                { 
+                    <option value="@item.Code">@Convert.ToInt32(@item.Code).ToString("00000") - @item.Name</option>
+                }
+            }
+
+        </select>
+        <script>
+        $('select.selectpicker').on('change', function(){
+        var selected = $('.selectpicker option:selected').val();
+        var url = "@Url.Action("Months")" + "?SiteCode=" + selected;
+        $(location).attr('href', url);
+        });
+    </script>
+    </form>
+</li>
+
+<li>
+    @Html.ActionLink("Пред.",
+            "Months",
+            "Level",
+            new
+            {  SiteCode = Model.SelectedSiteCode,
+                YYYY = ViewBag.currDate.AddMonths(-1).Year,
+                MM = ViewBag.currDate.AddMonths(-1).Month
+                
+            },
+                                new
+                                {
+                                    @class = "btn btn-default btn-lg"
+                                }
+)
+</li>
+<li>
+    @Html.ActionLink("След.",
+                    "Months",
+                    "Level",
+                    new
+                    {                                                     // routeValues
+                        SiteCode = Model.SelectedSiteCode,
+                        YYYY = ViewBag.currDate.AddMonths(1).Year,
+                        MM = ViewBag.currDate.AddMonths(1).Month
+
+                    },
+                                new
+                                {
+                                    @class = "btn btn-default btn-lg"
+                                }
+)
+</li>

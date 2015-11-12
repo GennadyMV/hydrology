@@ -19,8 +19,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrologyWeb", "HydrologyWe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrologyEntity", "HydrologyEntity\HydrologyEntity.csproj", "{5B4DC18C-E5EC-4E53-84ED-8A470612A0DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrologyAgkExportService", "HydrologyAgkExportService\HydrologyAgkExportService.csproj", "{0F71E349-C8A0-4514-865E-EC385F5F7792}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HydrologyCore", "HydrologyCore\HydrologyCore.csproj", "{7E85DCD2-609A-49B2-8FFD-C1BAAFB38395}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profile", "ProfileSource\Profile.csproj", "{F8DE8838-3350-4F1C-9B43-50DFE42DB6A8}"
@@ -81,14 +79,6 @@ Global
 		{5B4DC18C-E5EC-4E53-84ED-8A470612A0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B4DC18C-E5EC-4E53-84ED-8A470612A0DB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B4DC18C-E5EC-4E53-84ED-8A470612A0DB}.Release|x86.ActiveCfg = Release|Any CPU
-		{0F71E349-C8A0-4514-865E-EC385F5F7792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0F71E349-C8A0-4514-865E-EC385F5F7792}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0F71E349-C8A0-4514-865E-EC385F5F7792}.Debug|x86.ActiveCfg = Debug|x86
-		{0F71E349-C8A0-4514-865E-EC385F5F7792}.Debug|x86.Build.0 = Debug|x86
-		{0F71E349-C8A0-4514-865E-EC385F5F7792}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0F71E349-C8A0-4514-865E-EC385F5F7792}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0F71E349-C8A0-4514-865E-EC385F5F7792}.Release|x86.ActiveCfg = Release|x86
-		{0F71E349-C8A0-4514-865E-EC385F5F7792}.Release|x86.Build.0 = Release|x86
 		{7E85DCD2-609A-49B2-8FFD-C1BAAFB38395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7E85DCD2-609A-49B2-8FFD-C1BAAFB38395}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E85DCD2-609A-49B2-8FFD-C1BAAFB38395}.Debug|x86.ActiveCfg = Debug|Any CPU

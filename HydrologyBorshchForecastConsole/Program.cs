@@ -13,13 +13,14 @@ namespace HydrologyBorshchForecastConsole
     {
         static void Main(string[] args)
         {
-            while (true)
-            {
                 try
                 {
 
                     Console.WriteLine("Start Parser");
                     DateTime currDate = DateTime.Now;
+                    Request(currDate.AddDays(-8));
+                    Request(currDate.AddDays(-7));
+                    Request(currDate.AddDays(-6));
                     Request(currDate.AddDays(-5));
                     Request(currDate.AddDays(-4));
                     Request(currDate.AddDays(-3));
@@ -33,8 +34,7 @@ namespace HydrologyBorshchForecastConsole
                     Console.WriteLine(ex.Message);
                 }
                 Thread.Sleep(1000 * 60 * 60);
-                break;
-            }
+               
         }
 
         static void Send(DateTime dateCurr)
@@ -73,7 +73,7 @@ namespace HydrologyBorshchForecastConsole
 
             IBot theBotRiver = new BotRiver(logger);
             theBotRiver.Parser(dateCurr);
-            Thread.Sleep(1000 * 60);
+            Thread.Sleep(1000 * 60 *4);
 
             IBot theBotReservoir = new BotReservoir(logger);
             theBotReservoir.Parser(dateCurr);

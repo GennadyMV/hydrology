@@ -33,7 +33,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\</OutputPath>
+    <OutputPath>bin2\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -134,6 +134,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ExpenseController.cs" />
     <Compile Include="Controllers\ForecastController.cs" />
+    <Compile Include="Controllers\LevelController.cs" />
     <Compile Include="Controllers\MapController.cs" />
     <Compile Include="Controllers\WaterController.cs" />
     <Compile Include="Global.asax.cs">
@@ -142,6 +143,7 @@
     <Compile Include="Models\BorshchForecast.cs" />
     <Compile Include="Models\Site.cs" />
     <Compile Include="Models\ViewExpense.cs" />
+    <Compile Include="Models\ViewRiver.cs" />
     <Compile Include="Models\ViewMap.cs" />
     <Compile Include="Models\ViewWater.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -423,6 +425,10 @@
     <Content Include="Views\Water\_Menu.cshtml" />
     <Content Include="Views\Expense\Index.cshtml" />
     <Content Include="Views\Expense\Show.cshtml" />
+    <Content Include="Views\Level\Index.cshtml" />
+    <Content Include="Views\Level\Days.cshtml" />
+    <Content Include="Views\Level\Months.cshtml" />
+    <Content Include="Views\Level\_Menu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
